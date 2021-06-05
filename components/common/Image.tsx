@@ -10,7 +10,7 @@ type ImageProps = {
   className?: string
 }
 
-const Image = ({ bordered = false, className = "", ...props }: ImageProps) => {
+const Image = ({ bordered = false, className, ...props }: ImageProps) => {
   const classes = clsx([
     "bg-snow-white h-14 w-14",
     { "rounded-full shadow-md border-3 border-forest-green border-solid": bordered },

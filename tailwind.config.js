@@ -13,6 +13,9 @@ module.exports = {
     extend: {
       borderWidth: {
         3: "3px"
+      },
+      fontSize: {
+        "2xs": "10px"
       }
     }
   },

@@ -1,6 +1,6 @@
 import koala from "assets/koala.svg"
-import Button from "./common/Button"
-import Image from "./common/Image"
+import Button from "components/common/Button"
+import Image from "components/common/Image"
 
 const Drawer = () => {
   return (

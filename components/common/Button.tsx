@@ -5,7 +5,7 @@ type ButtonProps = React.ComponentPropsWithoutRef<"button"> & {
   text?: string
 }
 
-const Button = ({ icon, text, className = "", type = "button", ...props }: ButtonProps) => {
+const Button = ({ icon, text, className, type = "button", ...props }: ButtonProps) => {
   const classes = clsx(["flex p-0 border-none bg-none", className])
 
   return (
