@@ -1,6 +1,7 @@
 export enum TextType {
-  PAGE_HEADING = "page-heading",
+  ITEM_NAME = "item-name",
   PAGE_DESCRIPTION = "page-description",
-  SUMMARY_HEADING = "summary-heading",
-  ITEM_NAME = "item-name"
+  PAGE_HEADING = "page-heading",
+  PILL_NAME = "pill-name",
+  SUMMARY_HEADING = "summary-heading"
 }

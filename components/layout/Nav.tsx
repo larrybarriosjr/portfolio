@@ -14,7 +14,10 @@ import {
 type NavProps = React.ComponentPropsWithoutRef<"nav">
 
 const Nav = ({ className, ...props }: NavProps) => {
-  const classes = clsx(["sticky bottom-0 left-0 w-full h-max shadow-md bg-snow-white", className])
+  const classes = clsx([
+    "sticky bottom-0 left-0 w-full h-max ring-1 ring-steel-grey bg-snow-white",
+    className
+  ])
   return (
     <IconContext.Provider value={{ className: "h-6 w-6 text-onyx-black" }}>
       <nav className={classes} {...props}>

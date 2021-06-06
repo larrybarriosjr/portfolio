@@ -16,6 +16,8 @@ const Text = ({ type, children, className, ...props }: TextProps) => {
         return "text-xs font-semibold text-seafoam-green"
       case TextType.ITEM_NAME:
         return "font-bold text-onyx-black"
+      case TextType.PILL_NAME:
+        return "text-2xs font-extrabold text-seafoam-green"
       default:
         return "text-xs font-medium text-onyx-black"
     }
