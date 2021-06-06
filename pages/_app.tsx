@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="w-full min-h-screen pt-px bg-seafoam-green">
       <Header />
-      <main className="pb-14">
+      <main>
         <Component {...pageProps} />
       </main>
       <Nav />

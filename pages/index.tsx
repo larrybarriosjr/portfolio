@@ -77,7 +77,7 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
           </Link>
         </Row>
         <Row>
-          <List>
+          <List className="flex-col">
             {experiences.map(e => (
               <ExperienceItem key={e.key} logo={e.logo} name={e.name} title={e.title} pills={e.pills} />
             ))}
