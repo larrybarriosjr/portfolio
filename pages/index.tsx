@@ -62,6 +62,7 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
                 logo={p.logo}
                 name={p.name}
                 description={p.description}
+                link={p.link}
                 pills={p.pills}
               />
             ))}

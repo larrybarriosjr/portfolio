@@ -9,6 +9,7 @@ export type ProjectType = {
   logo: string
   name: string
   description: string
+  link: string
   pills: string[]
 }
 

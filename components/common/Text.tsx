@@ -3,9 +3,10 @@ import { TextType } from "types/enum"
 
 type TextProps = React.ComponentPropsWithoutRef<"p"> & {
   type?: TextType
+  link?: boolean
 }
 
-const Text = ({ type, children, className, ...props }: TextProps) => {
+const Text = ({ type, link, children, className, ...props }: TextProps) => {
   const typeClassName = (type?: TextType) => {
     switch (type) {
       case TextType.PAGE_HEADING:
@@ -15,7 +16,7 @@ const Text = ({ type, children, className, ...props }: TextProps) => {
       case TextType.SUMMARY_HEADING:
         return "text-xs font-semibold text-seafoam-green"
       case TextType.ITEM_NAME:
-        return "font-bold text-onyx-black"
+        return link ? "font-bold text-forest-green" : "font-bold text-onyx-black"
       case TextType.PILL_NAME:
         return "text-2xs font-extrabold text-seafoam-green"
       default:

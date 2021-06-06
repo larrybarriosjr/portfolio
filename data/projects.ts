@@ -12,6 +12,7 @@ export default <ProjectType[]>[
     logo: bifrost,
     name: "Bifrost",
     description: "A mobile-responsive online flight booking system.",
+    link: "https://bifrost.larrybarriosjr.com",
     pills: ["React", "TypeScript", "Tailwind", "React-Query", "Email JS", "Stripe"]
   },
   {
@@ -19,6 +20,7 @@ export default <ProjectType[]>[
     logo: mstodo,
     name: "Microsoft To Do Clone",
     description: "A progressive web app clone of the desktop app Microsoft To Do.",
+    link: "https://todo.larrybarriosjr.com",
     pills: ["React", "Recoil", "PWA", "Lovefield", "IndexedDB"]
   },
   {
@@ -26,6 +28,7 @@ export default <ProjectType[]>[
     logo: valhalla,
     name: "Valhalla Restaurant",
     description: `A simple static web pages for a luxury fine${HYPHEN}dining restaurant.`,
+    link: "https://valhalla.larrybarriosjr.com",
     pills: ["HTML", "CSS", "Bootstrap"]
   }
 ]
