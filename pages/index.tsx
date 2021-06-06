@@ -4,18 +4,15 @@ import Title from "components/layout/Title"
 import List from "containers/List"
 import Row from "containers/Row"
 import Section from "containers/Section"
+import skills from "data/skills"
+import { GetStaticProps } from "next"
 import Link from "next/link"
 import avatar from "public/images/larry.jpg"
-import nodejs from "public/images/nodejs.svg"
-import postgresql from "public/images/postgresql.svg"
-import react from "public/images/react.svg"
-import redux from "public/images/redux.svg"
-import sass from "public/images/sass.svg"
-import typescript from "public/images/typescript.svg"
 import { Fragment } from "react"
 import { TextType } from "types/enum"
+import { HomePropsType } from "types/pages"
 
-const Home = () => {
+const Home = ({ skills }: HomePropsType) => {
   return (
     <Fragment>
       <Title
@@ -40,17 +37,18 @@ const Home = () => {
         </Row>
         <Row>
           <List>
-            <SkillItem logo={react} name="React" />
-            <SkillItem logo={nodejs} name="Node JS" />
-            <SkillItem logo={redux} name="Redux" />
-            <SkillItem logo={postgresql} name="PostgreSQL" />
-            <SkillItem logo={sass} name="Sass" />
-            <SkillItem logo={typescript} name="TypeScript" />
+            {skills.map(s => (
+              <SkillItem key={s.key} logo={s.logo} name={s.name} />
+            ))}
           </List>
         </Row>
       </Section>
     </Fragment>
   )
+}
+
+export const getStaticProps: GetStaticProps<HomePropsType> = async () => {
+  return { props: { skills } }
 }
 
 export default Home
