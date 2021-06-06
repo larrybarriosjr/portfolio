@@ -1,7 +1,9 @@
 import Image from "components/common/Image"
 import Text from "components/common/Text"
 import Row from "containers/Row"
+import Section from "containers/Section"
 import Head from "next/head"
+import { TextType } from "types/enum"
 
 type TitleProps = React.ComponentPropsWithoutRef<"section"> & {
   avatar?: string
@@ -13,7 +15,7 @@ type TitleProps = React.ComponentPropsWithoutRef<"section"> & {
 
 const Title = ({ avatar, alt, heading, subheading, label }: TitleProps) => {
   return (
-    <section>
+    <Section className="bg-none">
       <Head>
         <title>Koala | {label}</title>
       </Head>
@@ -23,7 +25,7 @@ const Title = ({ avatar, alt, heading, subheading, label }: TitleProps) => {
         className="flex-col items-center mt-0 mb-2"
       >
         {avatar ? (
-          <Image src={avatar} alt={alt} width={162} height={162} className="w-40 h-40" bordered />
+          <Image src={avatar} alt={alt} layout="fill" objectFit="cover" className="w-40 h-40" bordered />
         ) : null}
         <h1 id={"page-title-" + label.toLowerCase()} hidden>
           {label}
@@ -31,10 +33,10 @@ const Title = ({ avatar, alt, heading, subheading, label }: TitleProps) => {
         <p id={"page-info-" + label.toLowerCase()} hidden>
           {label + " page"}
         </p>
-        <Text type="page-heading">{heading}</Text>
-        {subheading ? <Text type="page-description">{subheading}</Text> : null}
+        <Text type={TextType.PAGE_HEADING}>{heading}</Text>
+        {subheading ? <Text type={TextType.PAGE_DESCRIPTION}>{subheading}</Text> : null}
       </Row>
-    </section>
+    </Section>
   )
 }
 

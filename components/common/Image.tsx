@@ -8,7 +8,7 @@ type ImageProps = NextImageProps & {
 
 const Image = ({ bordered = false, className, ...props }: ImageProps) => {
   const classes = clsx([
-    "bg-snow-white overflow-hidden",
+    "relative bg-snow-white overflow-hidden",
     { "rounded-full shadow-md border-3 border-forest-green border-solid": bordered },
     className
   ])

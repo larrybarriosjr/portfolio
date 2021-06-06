@@ -1,16 +1,21 @@
 import clsx from "clsx"
+import { TextType } from "types/enum"
 
 type TextProps = React.ComponentPropsWithoutRef<"p"> & {
-  type?: "page-heading" | "page-description"
+  type?: TextType
 }
 
 const Text = ({ type, children, className, ...props }: TextProps) => {
-  const typeClassName = (type?: "page-heading" | "page-description") => {
+  const typeClassName = (type?: TextType) => {
     switch (type) {
-      case "page-heading":
+      case TextType.PAGE_HEADING:
         return "text-2xl font-extrabold tracking-wide text-forest-green"
-      case "page-description":
+      case TextType.PAGE_DESCRIPTION:
         return "font-bold text-fern-green"
+      case TextType.SUMMARY_HEADING:
+        return "text-xs font-semibold text-seafoam-green"
+      case TextType.ITEM_NAME:
+        return "font-bold text-onyx-black"
       default:
         return "text-xs font-medium text-onyx-black"
     }
