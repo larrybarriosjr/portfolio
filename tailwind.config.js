@@ -10,6 +10,9 @@ module.exports = {
       "steel-grey": "#00000080",
       "snow-white": "#fafefe"
     },
+    fontFamily: {
+      sans: ["Raleway"]
+    },
     extend: {
       borderWidth: {
         3: "3px"
