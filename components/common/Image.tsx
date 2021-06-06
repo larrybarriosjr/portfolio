@@ -1,11 +1,7 @@
 import clsx from "clsx"
-import NextImage from "next/image"
+import NextImage, { ImageProps as NextImageProps } from "next/image"
 
-type ImageProps = {
-  alt: string
-  src: string
-  width: number
-  height: number
+type ImageProps = NextImageProps & {
   bordered?: boolean
   className?: string
 }
