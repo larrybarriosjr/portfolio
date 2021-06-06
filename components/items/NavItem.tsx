@@ -12,7 +12,7 @@ const NavItem = ({ icon, name, className, ...props }: NavItemProps) => {
 
   return (
     <li className={classes} {...props}>
-      <Link href="#">
+      <Link href="/">
         <Button
           icon={icon}
           text={name}
