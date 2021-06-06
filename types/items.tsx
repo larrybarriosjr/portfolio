@@ -11,3 +11,11 @@ export type ProjectType = {
   description: string
   pills: string[]
 }
+
+export type ExperienceType = {
+  key: number
+  logo: string
+  name: string
+  title: string
+  pills: string[]
+}
