@@ -1,5 +1,5 @@
 import Button from "components/common/Button"
-import Brand from "components/layout/Brand"
+import Logo from "components/layout/Logo"
 import Row from "containers/Row"
 import { BiEnvelope, BiSearchAlt } from "react-icons/bi"
 import Drawer from "./Drawer"
@@ -7,7 +7,7 @@ import Drawer from "./Drawer"
 const Header = () => {
   return (
     <Row className="items-center">
-      <Brand className="mr-auto" />
+      <Logo className="mr-auto" />
       <Button icon={<BiSearchAlt />} className="mx-3 text-4xl text-forest-green" />
       <Button icon={<BiEnvelope />} className="mx-3 text-4xl text-forest-green" />
       <Drawer />
