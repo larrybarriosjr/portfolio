@@ -22,7 +22,7 @@ const ProjectItem = ({ logo, name, description, link, pills, ...props }: Project
         </Row>
         <Row className="flex-col m-0 ml-6 items-left">
           <a href={link} target="_blank" rel="noopener noreferrer" className="w-max">
-            <Text type={TextType.ITEM_NAME} className="flex items-center gap-1 mb-1" link>
+            <Text type={TextType.ITEM_NAME} className="flex items-center gap-1 mb-1" title={link} link>
               {name} <RiExternalLinkLine />
             </Text>
           </a>

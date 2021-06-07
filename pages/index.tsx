@@ -69,7 +69,7 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
             </Link>
           </Row>
           <Row>
-            <List>
+            <List className="lg:mr-32">
               {projects
                 .sort((a, b) => b.key - a.key)
                 .map(p => (
