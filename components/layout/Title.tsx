@@ -30,7 +30,7 @@ const Title = ({ avatar, alt, heading, subheading, label }: TitleProps) => {
             alt={alt}
             layout="fill"
             objectFit="cover"
-            className="w-40 h-40 lg:w-60 lg:h-60 lg:my-4"
+            className="w-40 h-40 sm:w-60 sm:h-60 sm:my-4"
             bordered
           />
         ) : null}

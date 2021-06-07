@@ -14,7 +14,7 @@ const Header = () => {
         <Logo className="mr-auto" />
         <Nav className="hidden lg:flex" />
         <a
-          href="resume.pdf"
+          href="Larry_Barrios_Jr_Resume.pdf"
           download="Larry Barrios Jr Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"

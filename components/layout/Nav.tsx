@@ -35,7 +35,7 @@ const Nav = ({ className, ...props }: NavProps) => {
             <NavItem
               icon={<RiDownloadFill />}
               name="Resume"
-              link="resume.pdf"
+              link="Larry_Barrios_Jr_Resume.pdf"
               download="Larry Barrios Jr Resume.pdf"
               className="hidden lg:flex"
             />
