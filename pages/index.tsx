@@ -30,7 +30,18 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
         <Row>
           <Text type={TextType.SUMMARY_HEADING}>About Me</Text>
         </Row>
-        <Row></Row>
+          <Row className="flex-col gap-y-4">
+            <Text type={TextType.ITEM_NAME}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tenetur, aut repellat porro
+              provident id delectus. Soluta repellat, doloribus autem cum ipsa harum ab a aut aperiam
+              cupiditate quasi est!
+            </Text>
+            <Text type={TextType.ITEM_NAME}>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tenetur, aut repellat porro
+              provident id delectus. Soluta repellat, doloribus autem cum ipsa harum ab a aut aperiam
+              cupiditate quasi est!
+            </Text>
+          </Row>
       </Section>
       <Section>
         <Row className="justify-between">
