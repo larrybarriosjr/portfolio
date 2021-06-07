@@ -20,11 +20,11 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
   return (
     <Fragment>
       <Title
-        avatar={avatar}
         alt="Larry Barrios Jr."
+        avatar={avatar}
         heading="Larry Barrios Jr."
+        label="Featured"
         subheading="Web App Developer"
-        label="Profile"
       />
       <Section>
         <Row>
@@ -56,16 +56,18 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
         </Row>
         <Row>
           <List>
-            {projects.map(p => (
-              <ProjectItem
-                key={p.key}
-                logo={p.logo}
-                name={p.name}
-                description={p.description}
-                link={p.link}
-                pills={p.pills}
-              />
-            ))}
+            {projects
+              .sort((a, b) => b.key - a.key)
+              .map(p => (
+                <ProjectItem
+                  description={p.description}
+                  key={p.key}
+                  link={p.link}
+                  logo={p.logo}
+                  name={p.name}
+                  pills={p.pills}
+                />
+              ))}
           </List>
         </Row>
       </Section>
@@ -78,9 +80,11 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
         </Row>
         <Row>
           <List className="flex-col">
-            {experiences.map(e => (
-              <ExperienceItem key={e.key} logo={e.logo} name={e.name} title={e.title} pills={e.pills} />
-            ))}
+            {experiences
+              .sort((a, b) => b.key - a.key)
+              .map(e => (
+                <ExperienceItem key={e.key} logo={e.logo} name={e.name} pills={e.pills} title={e.title} />
+              ))}
           </List>
         </Row>
       </Section>

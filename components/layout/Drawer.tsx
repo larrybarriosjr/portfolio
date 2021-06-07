@@ -7,12 +7,12 @@ const Drawer = () => {
     <Button
       icon={
         <Image
-          src={koala}
           alt="Cipher Koala image"
-          className="p-1 h-14 w-14"
-          width={44}
-          height={44}
           bordered
+          className="p-1 h-14 w-14"
+          height={44}
+          src={koala}
+          width={44}
         />
       }
       className="ml-3"

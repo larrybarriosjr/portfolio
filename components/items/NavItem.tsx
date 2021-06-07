@@ -12,11 +12,11 @@ const NavItem = ({ icon, name, className, ...props }: NavItemProps) => {
 
   return (
     <li className={classes} {...props}>
-      <Link href="/">
+      <Link href="/" scroll={false}>
         <Button
+          className="flex-col items-center w-full h-full gap-1 p-1 font-bold uppercase text-forest-green text-2xs"
           icon={icon}
           text={name}
-          className="flex-col items-center w-full h-full gap-1 p-1 font-bold uppercase text-forest-green text-2xs"
         />
       </Link>
     </li>

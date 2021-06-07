@@ -8,27 +8,27 @@ const HYPHEN = decode("&#8209;")
 
 export default <ProjectType[]>[
   {
+    description: `A simple static web pages for a luxury fine${HYPHEN}dining restaurant.`,
     key: 1,
-    logo: bifrost,
-    name: "Bifrost",
-    description: "A mobile-responsive online flight booking system.",
-    link: "https://bifrost.larrybarriosjr.com",
-    pills: ["React", "TypeScript", "Tailwind", "React-Query", "Email JS", "Stripe"]
+    link: "https://valhalla.larrybarriosjr.com",
+    logo: valhalla,
+    name: "Valhalla Restaurant",
+    pills: ["HTML", "CSS", "Bootstrap"]
   },
   {
+    description: "A progressive web app clone of the desktop app Microsoft To Do.",
     key: 2,
+    link: "https://todo.larrybarriosjr.com",
     logo: mstodo,
     name: "Microsoft To Do Clone",
-    description: "A progressive web app clone of the desktop app Microsoft To Do.",
-    link: "https://todo.larrybarriosjr.com",
     pills: ["React", "Recoil", "PWA", "Lovefield", "IndexedDB"]
   },
   {
+    description: "A mobile-responsive online flight booking system.",
     key: 3,
-    logo: valhalla,
-    name: "Valhalla Restaurant",
-    description: `A simple static web pages for a luxury fine${HYPHEN}dining restaurant.`,
-    link: "https://valhalla.larrybarriosjr.com",
-    pills: ["HTML", "CSS", "Bootstrap"]
+    link: "https://bifrost.larrybarriosjr.com",
+    logo: bifrost,
+    name: "Bifrost",
+    pills: ["React", "TypeScript", "Tailwind", "React-Query", "Email JS", "Stripe"]
   }
 ]

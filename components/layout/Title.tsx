@@ -20,8 +20,8 @@ const Title = ({ avatar, alt, heading, subheading, label }: TitleProps) => {
         <title>Koala | {label}</title>
       </Head>
       <Row
-        aria-labelledby={"page-title-" + label.toLowerCase()}
         aria-describedby={"page-info-" + label.toLowerCase()}
+        aria-labelledby={"page-title-" + label.toLowerCase()}
         className="flex-col items-center mt-0 mb-2"
       >
         {avatar ? (

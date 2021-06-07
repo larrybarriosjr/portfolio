@@ -1,17 +1,16 @@
 module.exports = {
+  darkMode: false,
+  plugins: [],
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false, // or 'media' or 'class'
+  // or 'media' or 'class'
   theme: {
     colors: {
-      "forest-green": "#1a4314",
-      "seafoam-green": "#b2d2a4",
       "fern-green": "#1a431480",
+      "forest-green": "#1a4314",
       "onyx-black": "#030104",
-      "steel-grey": "#00000080",
-      "snow-white": "#fafefe"
-    },
-    fontFamily: {
-      sans: ["Raleway"]
+      "seafoam-green": "#b2d2a4",
+      "snow-white": "#fafefe",
+      "steel-grey": "#00000080"
     },
     extend: {
       borderWidth: {
@@ -20,10 +19,12 @@ module.exports = {
       fontSize: {
         "2xs": "10px"
       }
+    },
+    fontFamily: {
+      sans: ["Raleway"]
     }
   },
   variants: {
     extend: {}
-  },
-  plugins: []
+  }
 }
