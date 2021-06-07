@@ -2,6 +2,7 @@ import Image from "components/common/Image"
 import Pill from "components/common/Pill"
 import Text from "components/common/Text"
 import Row from "containers/Row"
+import { RiExternalLinkLine } from "react-icons/ri"
 import { TextType } from "types/enum"
 
 type ProjectItemProps = React.ComponentPropsWithoutRef<"li"> & {
@@ -20,9 +21,9 @@ const ProjectItem = ({ logo, name, description, link, pills, ...props }: Project
           <Image src={logo} layout="fill" objectFit="contain" className="w-16 h-auto" link={link} />
         </Row>
         <Row className="flex-col m-0 ml-6 items-left">
-          <a href={link} target="_blank" rel="noopener noreferrer">
-            <Text type={TextType.ITEM_NAME} className="mb-1" link>
-              {name}
+          <a href={link} target="_blank" rel="noopener noreferrer" className="w-max">
+            <Text type={TextType.ITEM_NAME} className="flex items-center gap-1 mb-1" link>
+              {name} <RiExternalLinkLine />
             </Text>
           </a>
           <Text className="mb-1">{description}</Text>

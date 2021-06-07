@@ -5,12 +5,14 @@ import "styles/globals.css"
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div className="w-full min-h-screen pt-px bg-seafoam-green">
-      <Header />
-      <main>
-        <Component {...pageProps} />
-      </main>
-      <Nav />
+    <div className="w-full min-h-screen bg-steel-grey">
+      <div className="w-full max-w-5xl pt-px mx-auto lg:px-2 bg-seafoam-green">
+        <Header />
+        <main>
+          <Component {...pageProps} />
+        </main>
+        <Nav />
+      </div>
     </div>
   )
 }
