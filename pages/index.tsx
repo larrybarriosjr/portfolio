@@ -47,14 +47,16 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
         <Section className="w-full my-0 mb-2 md:w-1/2">
           <Row className="justify-between">
             <Text type={TextType.SUMMARY_HEADING}>Skills Summary</Text>
-            <Link href="/">
-              <Text type={TextType.SUMMARY_HEADING}>View Details</Text>
+            <Link href="/skills">
+              <Text type={TextType.SUMMARY_HEADING} link>
+                View Details
+              </Text>
             </Link>
           </Row>
           <Row>
             <List>
-              {skills.map(s => (
-                <SkillItem key={s.key} logo={s.logo} name={s.name} />
+              {skills.map((s, idx) => (
+                <SkillItem key={idx} logo={s.logo} name={s.name} />
               ))}
             </List>
           </Row>
@@ -70,18 +72,16 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
           </Row>
           <Row>
             <List className="lg:mr-32">
-              {projects
-                .sort((a, b) => b.key - a.key)
-                .map(p => (
-                  <ProjectItem
-                    description={p.description}
-                    key={p.key}
-                    link={p.link}
-                    logo={p.logo}
-                    name={p.name}
-                    pills={p.pills}
-                  />
-                ))}
+              {projects.map((p, idx) => (
+                <ProjectItem
+                  description={p.description}
+                  key={idx}
+                  link={p.link}
+                  logo={p.logo}
+                  name={p.name}
+                  pills={p.pills}
+                />
+              ))}
             </List>
           </Row>
         </Section>
@@ -94,11 +94,9 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
           </Row>
           <Row>
             <List className="flex-col">
-              {experiences
-                .sort((a, b) => b.key - a.key)
-                .map(e => (
-                  <ExperienceItem key={e.key} logo={e.logo} name={e.name} pills={e.pills} title={e.title} />
-                ))}
+              {experiences.map((e, idx) => (
+                <ExperienceItem key={idx} logo={e.logo} name={e.name} pills={e.pills} title={e.title} />
+              ))}
             </List>
           </Row>
         </Section>

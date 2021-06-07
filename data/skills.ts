@@ -3,56 +3,65 @@ import nextjs from "public/images/nextjs.svg"
 import nodejs from "public/images/nodejs.svg"
 import postgresql from "public/images/postgresql.svg"
 import react from "public/images/react.svg"
+import recoil from "public/images/recoil.svg"
 import redux from "public/images/redux.svg"
 import sass from "public/images/sass.svg"
 import tailwind from "public/images/tailwind.svg"
 import typescript from "public/images/typescript.svg"
+import { SkillCategory } from "types/enum"
 import { SkillType } from "types/items"
+
+const { PROFESSIONAL, PERSONAL, EXPLORE } = SkillCategory
 
 export default <SkillType[]>[
   {
-    key: 1,
     logo: react,
-    name: "React"
+    name: "React",
+    category: PROFESSIONAL
   },
   {
-    key: 2,
     logo: typescript,
-    name: "TypeScript"
+    name: "TypeScript",
+    category: PROFESSIONAL
   },
   {
-    key: 3,
     logo: nextjs,
-    name: "Next JS"
+    name: "Next JS",
+    category: PERSONAL
   },
   {
-    key: 4,
     logo: tailwind,
-    name: "Tailwind CSS"
+    name: "Tailwind CSS",
+    category: PERSONAL
   },
   {
-    key: 5,
     logo: redux,
-    name: "Redux"
+    name: "Redux",
+    category: PROFESSIONAL
   },
   {
-    key: 6,
     logo: sass,
-    name: "Sass"
+    name: "Sass",
+    category: PROFESSIONAL
   },
   {
-    key: 7,
     logo: formik,
-    name: "Formik"
+    name: "Formik",
+    category: PROFESSIONAL
   },
   {
-    key: 8,
     logo: nodejs,
-    name: "Node JS"
+    name: "Node JS",
+    category: PROFESSIONAL
   },
   {
-    key: 9,
     logo: postgresql,
-    name: "PostgreSQL"
+    name: "PostgreSQL",
+    category: PROFESSIONAL
+  },
+  {
+    logo: recoil,
+    name: "Recoil",
+    category: PERSONAL
   }
 ]

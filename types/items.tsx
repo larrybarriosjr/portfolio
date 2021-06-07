@@ -1,5 +1,6 @@
+import { SkillCategory } from "./enum"
+
 export type ExperienceType = {
-  key: number
   logo: string
   name: string
   pills: string[]
@@ -8,7 +9,6 @@ export type ExperienceType = {
 
 export type ProjectType = {
   description: string
-  key: number
   link: string
   logo: string
   name: string
@@ -17,13 +17,12 @@ export type ProjectType = {
 
 export type RecommendedType = {
   category: string
-  key: number
   link?: string
   text: string
 }
 
 export type SkillType = {
-  key: number
+  category: SkillCategory
   logo: string
   name: string
 }

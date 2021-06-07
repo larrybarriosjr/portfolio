@@ -9,7 +9,6 @@ const HYPHEN = decode("&#8209;")
 export default <ProjectType[]>[
   {
     description: `A simple static web pages for a luxury fine${HYPHEN}dining restaurant.`,
-    key: 1,
     link: "https://valhalla.larrybarriosjr.com",
     logo: valhalla,
     name: "Valhalla Restaurant",
@@ -17,7 +16,6 @@ export default <ProjectType[]>[
   },
   {
     description: "A progressive web app clone of the desktop app Microsoft To Do.",
-    key: 2,
     link: "https://todo.larrybarriosjr.com",
     logo: mstodo,
     name: "Microsoft To Do Clone",
@@ -25,7 +23,6 @@ export default <ProjectType[]>[
   },
   {
     description: "A mobile-responsive online flight booking system.",
-    key: 3,
     link: "https://bifrost.larrybarriosjr.com",
     logo: bifrost,
     name: "Bifrost",
