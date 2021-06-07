@@ -1,4 +1,6 @@
 export enum TextType {
+  DRAWER_DESCRIPTION = "drawer-description",
+  DRAWER_HEADING = "drawer-heading",
   ITEM_NAME = "item-name",
   PAGE_DESCRIPTION = "page-description",
   PAGE_HEADING = "page-heading",

@@ -15,6 +15,13 @@ export type ProjectType = {
   pills: string[]
 }
 
+export type RecommendedType = {
+  category: string
+  key: number
+  link?: string
+  text: string
+}
+
 export type SkillType = {
   key: number
   logo: string
