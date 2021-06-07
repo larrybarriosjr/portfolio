@@ -25,7 +25,14 @@ const Title = ({ avatar, alt, heading, subheading, label }: TitleProps) => {
         className="flex-col items-center mt-0 mb-2"
       >
         {avatar ? (
-          <Image src={avatar} alt={alt} layout="fill" objectFit="cover" className="w-40 h-40" bordered />
+          <Image
+            src={avatar}
+            alt={alt}
+            layout="fill"
+            objectFit="cover"
+            className="w-40 h-40 lg:w-60 lg:h-60 lg:my-4"
+            bordered
+          />
         ) : null}
         <h1 id={"page-title-" + label.toLowerCase()} hidden>
           {label}

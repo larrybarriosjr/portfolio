@@ -11,7 +11,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <main>
           <Component {...pageProps} />
         </main>
-        <Nav />
+        <Nav className="lg:hidden" />
       </div>
     </div>
   )

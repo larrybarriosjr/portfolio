@@ -10,7 +10,8 @@ module.exports = {
       "onyx-black": "#030104",
       "seafoam-green": "#b2d2a4",
       "snow-white": "#fafefe",
-      "steel-grey": "#00000080"
+      "steel-grey": "#00000080",
+      transparent: "transparent"
     },
     extend: {
       borderWidth: {
