@@ -6,9 +6,9 @@ import "styles/globals.css"
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div className="w-full min-h-screen bg-steel-grey">
-      <div className="w-full max-w-5xl pt-px mx-auto lg:px-2 bg-seafoam-green">
+      <div className="w-full max-w-5xl min-h-screen pt-px mx-auto lg:px-2 bg-seafoam-green">
         <Header />
-        <main>
+        <main className="pb-14 lg:pb-px">
           <Component {...pageProps} />
         </main>
         <Nav className="lg:hidden" />

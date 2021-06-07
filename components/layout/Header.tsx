@@ -12,7 +12,7 @@ const Header = () => {
     <IconContext.Provider value={{ className: "text-4xl text-forest-green" }}>
       <Row className="items-center">
         <Logo className="mr-auto" />
-        <Nav className="hidden lg:flex" />
+        <Nav className="hidden lg:flex lg:static" />
         <a
           href="Larry_Barrios_Jr_Resume.pdf"
           download="Larry Barrios Jr Resume.pdf"

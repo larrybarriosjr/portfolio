@@ -17,7 +17,7 @@ type NavProps = React.ComponentPropsWithoutRef<"nav">
 
 const Nav = ({ className, ...props }: NavProps) => {
   const classes = clsx([
-    "sticky bottom-0 left-0 w-full h-max ring-1 ring-steel-grey bg-snow-white",
+    "fixed bottom-0 left-0 w-full h-max ring-1 ring-steel-grey bg-snow-white",
     "lg:w-max lg:ring-0 lg:bg-transparent",
     className
   ])
@@ -28,7 +28,7 @@ const Nav = ({ className, ...props }: NavProps) => {
         <Row className="m-0">
           <List className="lg:w-full lg:gap-x-8 lg:mr-4">
             <NavItem icon={<RiHomeHeartFill />} name="Featured" link="/" />
-            <NavItem icon={<RiSwordFill />} name="Skills" link="/" />
+            <NavItem icon={<RiSwordFill />} name="Skills" link="/skills" />
             <NavItem icon={<RiUser2Fill />} name="Profile" link="/" />
             <NavItem icon={<RiPencilRuler2Fill />} name="Projects" link="/" />
             <NavItem icon={<RiBriefcase4Fill />} name="Experiences" link="/" />
