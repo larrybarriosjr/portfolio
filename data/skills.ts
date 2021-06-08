@@ -1,13 +1,3 @@
-import formik from "public/images/formik.svg"
-import nextjs from "public/images/nextjs.svg"
-import nodejs from "public/images/nodejs.svg"
-import postgresql from "public/images/postgresql.svg"
-import react from "public/images/react.svg"
-import recoil from "public/images/recoil.svg"
-import redux from "public/images/redux.svg"
-import sass from "public/images/sass.svg"
-import tailwind from "public/images/tailwind.svg"
-import typescript from "public/images/typescript.svg"
 import { SkillCategory } from "types/enum"
 import { SkillType } from "types/items"
 
@@ -15,52 +5,52 @@ const { PROFESSIONAL, PERSONAL, EXPLORE } = SkillCategory
 
 export default <SkillType[]>[
   {
-    logo: react,
+    logo: "/images/skills/react.svg",
     name: "React",
     category: PROFESSIONAL
   },
   {
-    logo: typescript,
+    logo: "/images/skills/typescript.svg",
     name: "TypeScript",
     category: PROFESSIONAL
   },
   {
-    logo: nextjs,
+    logo: "/images/skills/nextjs.svg",
     name: "Next JS",
     category: PERSONAL
   },
   {
-    logo: tailwind,
+    logo: "/images/skills/tailwind.svg",
     name: "Tailwind CSS",
     category: PERSONAL
   },
   {
-    logo: redux,
+    logo: "/images/skills/redux.svg",
     name: "Redux",
     category: PROFESSIONAL
   },
   {
-    logo: sass,
+    logo: "/images/skills/sass.svg",
     name: "Sass",
     category: PROFESSIONAL
   },
   {
-    logo: formik,
+    logo: "/images/skills/formik.svg",
     name: "Formik",
     category: PROFESSIONAL
   },
   {
-    logo: nodejs,
+    logo: "/images/skills/nodejs.svg",
     name: "Node JS",
     category: PROFESSIONAL
   },
   {
-    logo: postgresql,
+    logo: "/images/skills/postgresql.svg",
     name: "PostgreSQL",
     category: PROFESSIONAL
   },
   {
-    logo: recoil,
+    logo: "/images/skills/recoil.svg",
     name: "Recoil",
     category: PERSONAL
   }
