@@ -49,7 +49,7 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
             <Text type={TextType.SUMMARY_HEADING}>Skills Summary</Text>
             <Link href="/skills/technical">
               <Text type={TextType.SUMMARY_HEADING} link>
-                View Details
+                View All
               </Text>
             </Link>
           </Row>
@@ -69,8 +69,10 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
         <Section className="w-full my-0 md:w-1/2 md:mb-2">
           <Row className="justify-between">
             <Text type={TextType.SUMMARY_HEADING}>Projects Summary</Text>
-            <Link href="/">
-              <Text type={TextType.SUMMARY_HEADING}>View Details</Text>
+            <Link href="/projects">
+              <Text type={TextType.SUMMARY_HEADING} link>
+                View Details
+              </Text>
             </Link>
           </Row>
           <Row>
