@@ -1,7 +1,7 @@
 import { SkillCategory } from "types/enum"
 import { SkillType } from "types/items"
 
-const { PROFESSIONAL, PERSONAL, EXPLORE } = SkillCategory
+const { EXPLORE, PERSONAL, PROFESSIONAL, PROGRAM } = SkillCategory
 
 export default <SkillType[]>[
   {
@@ -53,5 +53,55 @@ export default <SkillType[]>[
     logo: "/images/skills/recoil.svg",
     name: "Recoil",
     category: PERSONAL
+  },
+  {
+    logo: "/images/skills/material-ui.svg",
+    name: "Material UI",
+    category: PROFESSIONAL
+  },
+  {
+    logo: "/images/skills/redux-saga.svg",
+    name: "Redux Saga",
+    category: PROFESSIONAL
+  },
+  {
+    logo: "/images/skills/express.svg",
+    name: "Express",
+    category: PROFESSIONAL
+  },
+  {
+    logo: "/images/skills/passport.svg",
+    name: "Passport",
+    category: PROFESSIONAL
+  },
+  {
+    logo: "/images/skills/git.svg",
+    name: "Git",
+    category: PROFESSIONAL
+  },
+  {
+    logo: "/images/skills/lambda.svg",
+    name: "AWS Lambda",
+    category: PROFESSIONAL
+  },
+  {
+    logo: "/images/skills/ec2.svg",
+    name: "AWS EC2",
+    category: PROFESSIONAL
+  },
+  {
+    logo: "/images/skills/s3.svg",
+    name: "AWS S3",
+    category: PROFESSIONAL
+  },
+  {
+    logo: "/images/skills/mysql.svg",
+    name: "MySQL",
+    category: PROFESSIONAL
+  },
+  {
+    logo: "/images/skills/bootstrap.svg",
+    name: "Bootstrap",
+    category: PROFESSIONAL
   }
 ]

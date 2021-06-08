@@ -1,3 +1,10 @@
+export enum SkillCategory {
+  EXPLORE = "explore",
+  PERSONAL = "personal",
+  PROFESSIONAL = "professional",
+  PROGRAM = "program"
+}
+
 export enum TextType {
   DRAWER_DESCRIPTION = "drawer-description",
   DRAWER_HEADING = "drawer-heading",
