@@ -59,7 +59,7 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
                 .filter(s => s.category === SkillCategory.PROFESSIONAL)
                 .slice(0, 9)
                 .map((s, idx) => (
-                  <SkillItem key={idx} logo={s.logo} name={s.name} />
+                  <SkillItem key={idx} logo={s.logo} name={s.name} className="md:w-1/3" />
                 ))}
             </List>
           </Row>
