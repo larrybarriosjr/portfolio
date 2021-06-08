@@ -12,7 +12,14 @@ import { ExperiencesPropsType } from "types/pages"
 const Experiences = ({ experiences }: ExperiencesPropsType) => {
   return (
     <Fragment>
-      <Title label="Experiences" heading="Experiences" subheading="" />
+      <Title
+        label="Experiences"
+        heading="Experiences"
+        subheading="List of companies I have worked in. I am a career shifter
+          so this list only includes the one related to programming and IT
+          industries. Maybe I should also list my previous non-related jobs?
+          What do you think?"
+      />
       <Grid className="grid-cols-1 gap-2 my-2 sm:grid-cols-2">
         {experiences.length
           ? experiences.map((e, idx) => (
