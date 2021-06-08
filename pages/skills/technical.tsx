@@ -27,62 +27,64 @@ const TechnicalSkills = ({ skills }: SkillsPropsType) => {
           also plan on explaining what I've learnt with each skills in a blog so some of
           them will be a link to it in the future."
       />
-      {professional.length ? (
-        <Section>
-          <Row>
-            <Text type={TextType.SUMMARY_HEADING}>Already Used on Professional Projects</Text>
-          </Row>
-          <Row>
-            <List>
-              {professional.map((s, idx) => (
-                <SkillItem key={idx} logo={s.logo} name={s.name} />
-              ))}
-            </List>
-          </Row>
-        </Section>
-      ) : null}
-      {personal.length ? (
-        <Section>
-          <Row>
-            <Text type={TextType.SUMMARY_HEADING}>Already Used on Personal Projects</Text>
-          </Row>
-          <Row>
-            <List>
-              {personal.map((s, idx) => (
-                <SkillItem key={idx} logo={s.logo} name={s.name} />
-              ))}
-            </List>
-          </Row>
-        </Section>
-      ) : null}
-      {explore.length ? (
-        <Section>
-          <Row>
-            <Text type={TextType.SUMMARY_HEADING}>Exploring Slightly as of the Moment</Text>
-          </Row>
-          <Row>
-            <List>
-              {explore.map((s, idx) => (
-                <SkillItem key={idx} logo={s.logo} name={s.name} />
-              ))}
-            </List>
-          </Row>
-        </Section>
-      ) : null}
-      {program.length ? (
-        <Section>
-          <Row>
-            <Text type={TextType.SUMMARY_HEADING}>Other Programs and Platforms Used</Text>
-          </Row>
-          <Row>
-            <List>
-              {program.map((s, idx) => (
-                <SkillItem key={idx} logo={s.logo} name={s.name} />
-              ))}
-            </List>
-          </Row>
-        </Section>
-      ) : null}
+      <Row className="flex-col gap-2 m-0">
+        {professional.length ? (
+          <Section className="w-full my-0">
+            <Row>
+              <Text type={TextType.SUMMARY_HEADING}>Already Used on Professional Projects</Text>
+            </Row>
+            <Row>
+              <List>
+                {professional.map((s, idx) => (
+                  <SkillItem key={idx} logo={s.logo} name={s.name} />
+                ))}
+              </List>
+            </Row>
+          </Section>
+        ) : null}
+        {personal.length ? (
+          <Section className="w-full my-0">
+            <Row>
+              <Text type={TextType.SUMMARY_HEADING}>Already Used on Personal Projects</Text>
+            </Row>
+            <Row>
+              <List>
+                {personal.map((s, idx) => (
+                  <SkillItem key={idx} logo={s.logo} name={s.name} />
+                ))}
+              </List>
+            </Row>
+          </Section>
+        ) : null}
+        {explore.length ? (
+          <Section className="w-full my-0">
+            <Row>
+              <Text type={TextType.SUMMARY_HEADING}>Exploring Slightly as of the Moment</Text>
+            </Row>
+            <Row>
+              <List>
+                {explore.map((s, idx) => (
+                  <SkillItem key={idx} logo={s.logo} name={s.name} />
+                ))}
+              </List>
+            </Row>
+          </Section>
+        ) : null}
+        {program.length ? (
+          <Section className="w-full my-0">
+            <Row>
+              <Text type={TextType.SUMMARY_HEADING}>Other Programs and Platforms Used</Text>
+            </Row>
+            <Row>
+              <List>
+                {program.map((s, idx) => (
+                  <SkillItem key={idx} logo={s.logo} name={s.name} />
+                ))}
+              </List>
+            </Row>
+          </Section>
+        ) : null}
+      </Row>
     </Fragment>
   )
 }
