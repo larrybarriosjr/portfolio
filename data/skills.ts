@@ -208,10 +208,5 @@ export default <SkillType[]>[
     logo: "/images/programs/zeplin.svg",
     name: "Zeplin",
     category: PROGRAM
-  },
-  {
-    logo: "/images/programs/teams.svg",
-    name: "Microsoft Teams",
-    category: PROGRAM
   }
 ]
