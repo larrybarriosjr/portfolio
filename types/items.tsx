@@ -10,6 +10,7 @@ export type ExperienceType = {
 
 export type ProjectType = {
   description: string
+  features: string[]
   link: string
   logo: string
   name: string

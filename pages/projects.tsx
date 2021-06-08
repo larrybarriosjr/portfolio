@@ -13,7 +13,7 @@ const Projects = ({ projects }: ProjectsPropsType) => {
   return (
     <Fragment>
       <Title label="Projects" heading="Projects" subheading="" />
-      <Grid className="grid-cols-2 gap-2">
+      <Grid className="grid-cols-1 gap-2 my-2 sm:grid-cols-2">
         {projects.length
           ? projects.map((p, idx) => (
               <Section key={idx} className="my-0">
@@ -21,6 +21,7 @@ const Projects = ({ projects }: ProjectsPropsType) => {
                   <List>
                     <ProjectItem
                       description={p.description}
+                      features={p.features}
                       link={p.link}
                       logo={p.logo}
                       name={p.name}
