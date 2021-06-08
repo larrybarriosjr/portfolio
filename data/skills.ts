@@ -158,5 +158,60 @@ export default <SkillType[]>[
     logo: "/images/skills/laravel.svg",
     name: "Laravel",
     category: EXPLORE
+  },
+  {
+    logo: "/images/programs/xd.svg",
+    name: "Adobe XD",
+    category: PROGRAM
+  },
+  {
+    logo: "/images/programs/illustrator.svg",
+    name: "Illustrator",
+    category: PROGRAM
+  },
+  {
+    logo: "/images/programs/photoshop.svg",
+    name: "Photoshop",
+    category: PROGRAM
+  },
+  {
+    logo: "/images/programs/netlify.svg",
+    name: "Netlify",
+    category: PROGRAM
+  },
+  {
+    logo: "/images/programs/digitalocean.svg",
+    name: "DigitalOcean",
+    category: PROGRAM
+  },
+  {
+    logo: "/images/programs/heroku.svg",
+    name: "Heroku",
+    category: PROGRAM
+  },
+  {
+    logo: "/images/programs/vscode.svg",
+    name: "Visual Studio Code",
+    category: PROGRAM
+  },
+  {
+    logo: "/images/programs/jira.svg",
+    name: "Jira",
+    category: PROGRAM
+  },
+  {
+    logo: "/images/programs/backlog.svg",
+    name: "Backlog",
+    category: PROGRAM
+  },
+  {
+    logo: "/images/programs/zeplin.svg",
+    name: "Zeplin",
+    category: PROGRAM
+  },
+  {
+    logo: "/images/programs/teams.svg",
+    name: "Microsoft Teams",
+    category: PROGRAM
   }
 ]
