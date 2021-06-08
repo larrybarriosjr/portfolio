@@ -15,16 +15,6 @@ export default <SkillType[]>[
     category: PROFESSIONAL
   },
   {
-    logo: "/images/skills/nextjs.svg",
-    name: "Next JS",
-    category: PERSONAL
-  },
-  {
-    logo: "/images/skills/tailwind.svg",
-    name: "Tailwind CSS",
-    category: PERSONAL
-  },
-  {
     logo: "/images/skills/redux.svg",
     name: "Redux",
     category: PROFESSIONAL
@@ -48,11 +38,6 @@ export default <SkillType[]>[
     logo: "/images/skills/postgresql.svg",
     name: "PostgreSQL",
     category: PROFESSIONAL
-  },
-  {
-    logo: "/images/skills/recoil.svg",
-    name: "Recoil",
-    category: PERSONAL
   },
   {
     logo: "/images/skills/material-ui.svg",
@@ -103,6 +88,21 @@ export default <SkillType[]>[
     logo: "/images/skills/bootstrap.svg",
     name: "Bootstrap",
     category: PROFESSIONAL
+  },
+  {
+    logo: "/images/skills/nextjs.svg",
+    name: "Next JS",
+    category: PERSONAL
+  },
+  {
+    logo: "/images/skills/tailwind.svg",
+    name: "Tailwind CSS",
+    category: PERSONAL
+  },
+  {
+    logo: "/images/skills/recoil.svg",
+    name: "Recoil",
+    category: PERSONAL
   },
   {
     logo: "/images/skills/react-query.svg",

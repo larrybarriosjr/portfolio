@@ -21,7 +21,11 @@ const TechnicalSkills = ({ skills }: SkillsPropsType) => {
       <Title
         label="Technical Skills"
         heading="Technical Skills"
-        subheading="This is a description of the technical skills list. What can usually be found here."
+        subheading="List of technical skills divided depending on whether I've used them
+          at work or just for personal projects. Some of them I've tinkered with, but no
+          projects with them yet. The last list is programs and platforms I've used. I
+          also plan on explaining what I've learnt with each skills in a blog so some of
+          them will be a link to it in the future."
       />
       {professional.length ? (
         <Section>
@@ -40,7 +44,7 @@ const TechnicalSkills = ({ skills }: SkillsPropsType) => {
       {personal.length ? (
         <Section>
           <Row>
-            <Text type={TextType.SUMMARY_HEADING}>Already Used on Professional Projects</Text>
+            <Text type={TextType.SUMMARY_HEADING}>Already Used on Personal Projects</Text>
           </Row>
           <Row>
             <List>
