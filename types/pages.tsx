@@ -5,3 +5,7 @@ export type HomePropsType = {
   projects: ProjectType[]
   skills: SkillType[]
 }
+
+export type SkillsPropsType = {
+  skills: SkillType[]
+}

@@ -1,5 +1,6 @@
 import Image from "components/common/Image"
 import Text from "components/common/Text"
+import Row from "containers/Row"
 import { TextType } from "types/enum"
 
 type SkillItemProps = React.ComponentPropsWithoutRef<"li"> & {
@@ -10,7 +11,9 @@ type SkillItemProps = React.ComponentPropsWithoutRef<"li"> & {
 const SkillItem = ({ logo, name, ...props }: SkillItemProps) => {
   return (
     <li className="w-1/3 text-center" {...props}>
-      <Image src={logo} alt={name} width="full" height={48} className="mx-auto" />
+      <Row className="relative m-0 mb-1">
+        <Image src={logo} alt={name} layout="fill" objectFit="contain" className="w-full h-12" />
+      </Row>
       <Text type={TextType.ITEM_NAME}>{name}</Text>
     </li>
   )

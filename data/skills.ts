@@ -103,5 +103,35 @@ export default <SkillType[]>[
     logo: "/images/skills/bootstrap.svg",
     name: "Bootstrap",
     category: PROFESSIONAL
+  },
+  {
+    logo: "/images/skills/react-query.svg",
+    name: "React Query",
+    category: PERSONAL
+  },
+  {
+    logo: "/images/skills/stripe.svg",
+    name: "Stripe",
+    category: PERSONAL
+  },
+  {
+    logo: "/images/skills/date-fns.svg",
+    name: "Date-Fns",
+    category: PERSONAL
+  },
+  {
+    logo: "/images/skills/lovefield.png",
+    name: "Lovefield",
+    category: PERSONAL
+  },
+  {
+    logo: "/images/skills/emailjs.svg",
+    name: "Email JS",
+    category: PERSONAL
+  },
+  {
+    logo: "/images/skills/dayjs.png",
+    name: "Day JS",
+    category: PERSONAL
   }
 ]
