@@ -6,14 +6,27 @@ import { RiExternalLinkLine } from "react-icons/ri"
 import { TextType } from "types/enum"
 
 type ExperienceItemProps = React.ComponentPropsWithoutRef<"li"> & {
+  date?: string
+  functions?: string[]
   link: string
+  location?: string
   logo: string
   name: string
   title: string
   pills: string[]
 }
 
-const ExperienceItem = ({ link, logo, name, title, pills, ...props }: ExperienceItemProps) => {
+const ExperienceItem = ({
+  date,
+  functions,
+  link,
+  location,
+  logo,
+  name,
+  title,
+  pills,
+  ...props
+}: ExperienceItemProps) => {
   return (
     <li {...props}>
       <Row className="flex-col m-0 text-center">
@@ -23,7 +36,7 @@ const ExperienceItem = ({ link, logo, name, title, pills, ...props }: Experience
         <Text
           type={TextType.ITEM_NAME}
           link={Boolean(link)}
-          className="flex items-center self-center gap-1 mb-1"
+          className="flex items-center self-center gap-1 my-1"
         >
           {name} <RiExternalLinkLine />
         </Text>
@@ -32,6 +45,30 @@ const ExperienceItem = ({ link, logo, name, title, pills, ...props }: Experience
           {pills.map((pill, idx) => (
             <Pill key={idx} name={pill} />
           ))}
+        </Row>
+        <Row className="flex-col m-0 my-2 gap-y-1">
+          {location ? (
+            <Row className="m-0 gap-x-1">
+              <Text className="font-bold">Office Location:</Text>
+              <Text className="italic">{location}</Text>
+            </Row>
+          ) : null}
+          {date ? (
+            <Row className="m-0 gap-x-1">
+              <Text className="font-bold">Employment Date:</Text>
+              <Text className="italic">{date}</Text>
+            </Row>
+          ) : null}
+          {functions && functions.length ? (
+            <Row className="flex-col m-0 text-left gap-y-1">
+              <Text className="font-bold">Job Description:</Text>
+              {functions.map((f, idx) => (
+                <Text key={idx} className="italic">
+                  &bull; {f}
+                </Text>
+              ))}
+            </Row>
+          ) : null}
         </Row>
       </Row>
     </li>

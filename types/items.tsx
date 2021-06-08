@@ -1,7 +1,10 @@
 import { SkillCategory } from "./enum"
 
 export type ExperienceType = {
+  employment_date: string
+  job_description: string[]
   link: string
+  location: string
   logo: string
   name: string
   stack: string[]

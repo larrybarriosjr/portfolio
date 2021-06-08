@@ -59,7 +59,14 @@ export default <ProjectType[]>[
   },
   {
     description: `A simple static web pages for a luxury fine${HYPHEN}dining restaurant.`,
-    features: ["Mobile Responsive", "Beautiful UI", "Static Web Pages"],
+    features: [
+      "Mobile Responsive",
+      "Beautiful UI",
+      "Gallery",
+      "Landing Page",
+      "Hero Carousel",
+      "Static Web Pages"
+    ],
     link: "https://valhalla.larrybarriosjr.com",
     logo: "/images/projects/valhalla.png",
     name: "Valhalla Restaurant",

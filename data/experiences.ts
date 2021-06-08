@@ -2,29 +2,45 @@ import { ExperienceType } from "types/items"
 
 export default <ExperienceType[]>[
   {
+    employment_date: "September 11, 2020 - Present",
+    job_description: [
+      "Actualize the UI created by the Designer and adapt to the frequent changes.",
+      "Act as a Scrum Master to the Front End team.",
+      "Act as a Senior Developer to the newly hired and foreign frontend engineers for familiarizing the codebase.",
+      "Interview candidates for the frontend position regarding the technical side of the recruitment process.",
+      "Test and review pull requests made by the other members of the team to ensure code quality and functionality."
+    ],
     link: "https://www.codevelopr.com/",
+    location: "BGC, Taguig City, Philippines",
     logo: "/images/companies/codevelopr.png",
     name: "Codevelopr",
     stack: ["React", "Redux", "Redux Saga", "TypeScript", "Formik", "Sass", "Material UI"],
     title: "Software Engineer (Front End)"
   },
   {
+    employment_date: "June 10, 2019 - July 17, 2020",
+    job_description: [
+      "Plan, document and develop enterprise application software for clients in Kagoshima, Japan.",
+      "Act as a Sub-Scrum Master on an alternate basis with other team members by leading the meeting with the team and the client.",
+      "Assume a senior role for the other team members to help with code quality and business logic.",
+      "Directly answer and solve clients' questions and issues.",
+      "Test, deploy, and administer application software using the clients' servers."
+    ],
     link: "https://www.tmj.ph/",
+    location: "BGC, Taguig City, Philippines",
     logo: "/images/companies/tmjp.png",
     name: "TMJP BPO Services Inc.",
     stack: [
       "React",
       "Node JS",
       "Express",
-      "Passport JS",
+      "Passport",
       "Bootstrap",
       "Sass",
       "MySQL",
       "PostgreSQL",
       "DynamoDB",
-      "AWS Lambda",
-      "AWS S3",
-      "AWS EC2"
+      "AWS"
     ],
     title: "Web Developer (Full Stack)"
   }

@@ -6,10 +6,14 @@ export type HomePropsType = {
   skills: SkillType[]
 }
 
-export type SkillsPropsType = {
-  skills: SkillType[]
+export type ExperiencesPropsType = {
+  experiences: ExperienceType[]
 }
 
 export type ProjectsPropsType = {
   projects: ProjectType[]
+}
+
+export type SkillsPropsType = {
+  skills: SkillType[]
 }

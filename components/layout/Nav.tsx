@@ -31,7 +31,7 @@ const Nav = ({ className, ...props }: NavProps) => {
             <NavItem icon={<RiSwordFill />} name="Skills" link="/skills/technical" />
             <NavItem icon={<RiUser2Fill />} name="Profile" link="/" />
             <NavItem icon={<RiPencilRuler2Fill />} name="Projects" link="/projects" />
-            <NavItem icon={<RiBriefcase4Fill />} name="Experiences" link="/" />
+            <NavItem icon={<RiBriefcase4Fill />} name="Experiences" link="/experiences" />
             <NavItem
               icon={<RiDownloadFill />}
               name="Resume"
