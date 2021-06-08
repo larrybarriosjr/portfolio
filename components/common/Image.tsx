@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import NextImage, { ImageProps as NextImageProps } from "next/image"
+import NextImage, { ImageLoaderProps, ImageProps as NextImageProps } from "next/image"
 
 type ImageProps = NextImageProps & {
   bordered?: boolean
@@ -14,10 +14,14 @@ const Image = ({ bordered = false, className, link, ...props }: ImageProps) => {
     className
   ])
 
+  const loader = ({ src, width }: ImageLoaderProps) => {
+    return `${process.env.NEXT_PUBLIC_URL}${src}?w=${width}`
+  }
+
   return (
     <span className={classes}>
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <NextImage {...props} />
+        <NextImage loader={loader} {...props} />
       </a>
     </span>
   )

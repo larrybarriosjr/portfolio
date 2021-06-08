@@ -4,15 +4,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@layer base {
-  @font-face {
-    font-family: Raleway;
-    src: url(/public/fonts/Raleway.ttf);
-  }
-  @font-face {
-    font-family: Raleway;
-    src: url(/public/fonts/Raleway-Italic.ttf);
-    font-style: italic, oblique;
-  }
-}

@@ -22,7 +22,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      sans: ["Raleway"]
+      sans: ["Raleway", "sans serif"]
     }
   },
   variants: {
