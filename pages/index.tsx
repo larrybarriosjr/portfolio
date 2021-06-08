@@ -13,7 +13,7 @@ import { GetStaticProps } from "next"
 import Link from "next/link"
 import avatar from "public/images/larry.jpg"
 import { Fragment } from "react"
-import { TextType } from "types/enum"
+import { SkillCategory, TextType } from "types/enum"
 import { HomePropsType } from "types/pages"
 
 const Home = ({ skills, projects, experiences }: HomePropsType) => {
@@ -55,9 +55,12 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
           </Row>
           <Row>
             <List>
-              {skills.map((s, idx) => (
-                <SkillItem key={idx} logo={s.logo} name={s.name} />
-              ))}
+              {skills
+                .filter(s => s.category === SkillCategory.PROFESSIONAL)
+                .slice(0, 9)
+                .map((s, idx) => (
+                  <SkillItem key={idx} logo={s.logo} name={s.name} />
+                ))}
             </List>
           </Row>
         </Section>
@@ -79,7 +82,7 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
                   link={p.link}
                   logo={p.logo}
                   name={p.name}
-                  pills={p.pills}
+                  pills={p.stack}
                 />
               ))}
             </List>
@@ -95,7 +98,14 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
           <Row>
             <List className="flex-col">
               {experiences.map((e, idx) => (
-                <ExperienceItem key={idx} logo={e.logo} name={e.name} pills={e.pills} title={e.title} />
+                <ExperienceItem
+                  key={idx}
+                  link={e.link}
+                  logo={e.logo}
+                  name={e.name}
+                  pills={e.stack}
+                  title={e.title}
+                />
               ))}
             </List>
           </Row>

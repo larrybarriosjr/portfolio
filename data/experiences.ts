@@ -1,12 +1,18 @@
-import codevelopr from "public/images/codevelopr.png"
-import tmjp from "public/images/tmjp.png"
 import { ExperienceType } from "types/items"
 
 export default <ExperienceType[]>[
   {
-    logo: tmjp,
+    link: "https://www.codevelopr.com/",
+    logo: "/images/companies/codevelopr.png",
+    name: "Codevelopr",
+    stack: ["React", "Redux", "Redux Saga", "TypeScript", "Formik", "Sass", "Material UI"],
+    title: "Software Engineer (Front End)"
+  },
+  {
+    link: "https://www.tmj.ph/",
+    logo: "/images/companies/tmjp.png",
     name: "TMJP BPO Services Inc.",
-    pills: [
+    stack: [
       "React",
       "Node JS",
       "Express",
@@ -17,15 +23,9 @@ export default <ExperienceType[]>[
       "PostgreSQL",
       "DynamoDB",
       "AWS Lambda",
-      "S3",
-      "EC2"
+      "AWS S3",
+      "AWS EC2"
     ],
     title: "Web Developer (Full Stack)"
-  },
-  {
-    logo: codevelopr,
-    name: "Codevelopr",
-    pills: ["React", "Redux", "Redux Saga", "TypeScript", "Formik", "Sass", "Material UI"],
-    title: "Software Engineer (Front End)"
   }
 ]

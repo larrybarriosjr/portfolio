@@ -6,10 +6,10 @@ import { RiExternalLinkLine } from "react-icons/ri"
 import { TextType } from "types/enum"
 
 type ProjectItemProps = React.ComponentPropsWithoutRef<"li"> & {
-  logo: string
-  name: string
   description: string
   link: string
+  logo: string
+  name: string
   pills: string[]
 }
 
