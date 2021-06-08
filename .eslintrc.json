@@ -13,7 +13,14 @@
     "plugin:prettier/recommended",
     "prettier"
   ],
-  "ignorePatterns": ["node_modules/*", ".next/*", "build/*", "next.config.js", "!.prettierrc.json"],
+  "ignorePatterns": [
+    "node_modules/*",
+    ".next/*",
+    "build/*",
+    "out/*",
+    "next.config.js",
+    "!.prettierrc.json"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaFeatures": {
