@@ -23,7 +23,7 @@ const NavItem = ({ download, icon, link, name, className, ...props }: NavItemPro
           />
         </a>
       ) : (
-        <Link href={link} scroll={false}>
+        <Link href={link}>
           <Button
             className="flex-col items-center w-full h-full gap-1 p-1 font-bold uppercase text-forest-green text-2xs"
             icon={icon}

@@ -42,7 +42,7 @@ const Title = ({ avatar, alt, heading, subheading, label }: TitleProps) => {
         </p>
         <Text type={TextType.PAGE_HEADING}>{heading}</Text>
         {subheading ? (
-          <Text type={TextType.PAGE_DESCRIPTION} className="w-9/12">
+          <Text type={TextType.PAGE_DESCRIPTION} className="w-5/6 lg:w-2/3">
             {subheading}
           </Text>
         ) : null}

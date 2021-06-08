@@ -12,7 +12,13 @@ import { ProjectsPropsType } from "types/pages"
 const Projects = ({ projects }: ProjectsPropsType) => {
   return (
     <Fragment>
-      <Title label="Projects" heading="Projects" subheading="" />
+      <Title
+        label="Projects"
+        heading="Projects"
+        subheading="List of personal projects I created by myself. I haven't included
+          proprietary projects at work yet where I have made significant contributions.
+          I will include them at a later time, though, without links and source codes."
+      />
       <Grid className="grid-cols-1 gap-2 my-2 sm:grid-cols-2">
         {projects.length
           ? projects.map((p, idx) => (

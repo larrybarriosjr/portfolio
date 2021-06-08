@@ -5,7 +5,7 @@ const HYPHEN = decode("&#8209;")
 
 export default <ProjectType[]>[
   {
-    description: "My personal portfolio. You're viewing it right now.",
+    description: "My personal portfolio. You're viewing it right now, actually.",
     features: [
       "Mobile Responsive",
       "Pre-Rendered for SEO",
