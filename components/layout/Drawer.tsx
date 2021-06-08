@@ -7,7 +7,6 @@ import List from "containers/List"
 import Row from "containers/Row"
 import Section from "containers/Section"
 import recommended from "data/recommended"
-import koala from "public/images/koala.svg"
 import { Fragment, useEffect, useState } from "react"
 import { ImCross } from "react-icons/im"
 import { RiDownloadFill } from "react-icons/ri"
@@ -48,7 +47,7 @@ const Drawer = () => {
             bordered
             className="p-1 h-14 w-14"
             height={44}
-            src={koala}
+            src="/images/koala.svg"
             width={44}
           />
         }
@@ -63,7 +62,7 @@ const Drawer = () => {
               bordered
               className="p-1 h-14 w-14"
               height={44}
-              src={koala}
+              src="/images/koala.svg"
               width={44}
             />
             <Row className="flex-col items-start m-0 mr-auto">
@@ -92,8 +91,8 @@ const Drawer = () => {
             <Text type={TextType.SUMMARY_HEADING}>Recommended List</Text>
           </Row>
           <List className="flex-col m-4 gap-y-2">
-            {recommended.map(r => (
-              <DrawerItem key={r.key} category={r.category} link={r.link} text={r.text} />
+            {recommended.map((r, idx) => (
+              <DrawerItem key={idx} category={r.category} link={r.link} text={r.text} />
             ))}
           </List>
         </Section>

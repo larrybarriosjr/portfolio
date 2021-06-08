@@ -4,8 +4,6 @@ import Row from "containers/Row"
 import Section from "containers/Section"
 import Image from "next/image"
 import Link from "next/link"
-import personal from "public/images/personal-skills.svg"
-import technical from "public/images/technical-skills.svg"
 import { Fragment } from "react"
 import { TextType } from "types/enum"
 
@@ -20,7 +18,7 @@ const Skills = () => {
       <Section className="pb-4">
         <Row className="flex-col text-center">
           <Row className="relative h-60 lg:h-80">
-            <Image src={technical} layout="fill" objectFit="contain" />
+            <Image src="/images/personal-skills.svg" layout="fill" objectFit="contain" />
           </Row>
           <Link href="/skills/technical">
             <Text type={TextType.ITEM_NAME} link>
@@ -30,7 +28,7 @@ const Skills = () => {
         </Row>
         <Row className="flex-col text-center">
           <Row className="relative h-60 lg:h-80">
-            <Image src={personal} layout="fill" objectFit="contain" />
+            <Image src="/images/technical-skills.svg" layout="fill" objectFit="contain" />
           </Row>
           <Link href="/skills/personal">
             <Text type={TextType.ITEM_NAME} link>

@@ -11,7 +11,6 @@ import projects from "data/projects"
 import skills from "data/skills"
 import { GetStaticProps } from "next"
 import Link from "next/link"
-import avatar from "public/images/larry.jpg"
 import { Fragment } from "react"
 import { SkillCategory, TextType } from "types/enum"
 import { HomePropsType } from "types/pages"
@@ -21,7 +20,7 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
     <Fragment>
       <Title
         alt="Larry Barrios Jr."
-        avatar={avatar}
+        avatar="/images/Larry.jpg"
         heading="Larry Barrios Jr."
         label="Featured"
         subheading="Web App Developer"
