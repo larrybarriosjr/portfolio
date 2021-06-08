@@ -11,7 +11,7 @@ type SkillItemProps = React.ComponentPropsWithoutRef<"li"> & {
 const SkillItem = ({ logo, name, ...props }: SkillItemProps) => {
   return (
     <li className="w-1/3 text-center" {...props}>
-      <Row className="relative m-0 mb-1">
+      <Row className="m-0 mb-1">
         <Image src={logo} alt={name} layout="fill" objectFit="contain" className="w-full h-12" />
       </Row>
       <Text type={TextType.ITEM_NAME}>{name}</Text>

@@ -133,5 +133,30 @@ export default <SkillType[]>[
     logo: "/images/skills/dayjs.png",
     name: "Day JS",
     category: PERSONAL
+  },
+  {
+    logo: "/images/skills/mongodb.svg",
+    name: "MongoDB",
+    category: EXPLORE
+  },
+  {
+    logo: "/images/skills/python.svg",
+    name: "Python",
+    category: EXPLORE
+  },
+  {
+    logo: "/images/skills/django.svg",
+    name: "Django",
+    category: EXPLORE
+  },
+  {
+    logo: "/images/skills/php.svg",
+    name: "PHP",
+    category: EXPLORE
+  },
+  {
+    logo: "/images/skills/laravel.svg",
+    name: "Laravel",
+    category: EXPLORE
   }
 ]
