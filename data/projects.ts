@@ -16,6 +16,8 @@ export default <ProjectType[]>[
     link: "https://larrybarriosjr.com",
     logo: "/images/koala.svg",
     name: "Koala",
+    platform: "GitHub",
+    source: "https://github.com/larrybarriosjr/portfolio",
     stack: ["React", "TypeScript", "Next JS", "Tailwind"]
   },
   {
@@ -33,6 +35,8 @@ export default <ProjectType[]>[
     link: "https://bifrost.larrybarriosjr.com",
     logo: "/images/projects/bifrost.png",
     name: "Bifrost",
+    platform: "GitHub",
+    source: "https://github.com/larrybarriosjr/bifrost",
     stack: ["React", "TypeScript", "Tailwind", "React-Query", "Email JS", "Stripe"]
   },
   {
@@ -49,6 +53,8 @@ export default <ProjectType[]>[
     link: "https://todo.larrybarriosjr.com",
     logo: "/images/projects/todo.png",
     name: "Microsoft To Do Clone",
+    platform: "GitHub",
+    source: "https://github.com/larrybarriosjr/microsoft-todo",
     stack: ["React", "Recoil", "PWA", "Lovefield", "IndexedDB"]
   },
   {
@@ -57,6 +63,8 @@ export default <ProjectType[]>[
     link: "https://valhalla.larrybarriosjr.com",
     logo: "/images/projects/valhalla.png",
     name: "Valhalla Restaurant",
+    platform: "GitHub",
+    source: "https://github.com/larrybarriosjr/valhalla",
     stack: ["HTML", "CSS", "Bootstrap"]
   }
 ]

@@ -14,6 +14,8 @@ export type ProjectType = {
   link: string
   logo: string
   name: string
+  platform: string
+  source: string
   stack: string[]
 }
 

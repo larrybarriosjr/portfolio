@@ -14,9 +14,21 @@ type ProjectItemProps = React.ComponentPropsWithoutRef<"li"> & {
   logo: string
   name: string
   pills: string[]
+  platform?: string
+  source?: string
 }
 
-const ProjectItem = ({ description, features, link, logo, name, pills, ...props }: ProjectItemProps) => {
+const ProjectItem = ({
+  description,
+  features,
+  link,
+  logo,
+  name,
+  pills,
+  platform,
+  source,
+  ...props
+}: ProjectItemProps) => {
   return (
     <li {...props}>
       <Row className="m-0">
@@ -36,6 +48,16 @@ const ProjectItem = ({ description, features, link, logo, name, pills, ...props 
             </Text>
           </a>
           <Text className="mb-1">{description}</Text>
+          {platform && source ? (
+            <Row className="m-0 mb-4 gap-x-1">
+              <Text className="font-bold">Source Code:</Text>
+              <a href={source} target="_blank" rel="noopener noreferrer" className="w-max">
+                <Text className="flex items-center gap-1 mb-1 italic" title={source} link>
+                  {platform} <RiExternalLinkLine />
+                </Text>
+              </a>
+            </Row>
+          ) : null}
           {features && features.length ? (
             <Row className="flex-col m-0 mb-2">
               <Text className="text-sm italic font-extrabold">Features:</Text>

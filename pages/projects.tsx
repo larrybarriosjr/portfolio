@@ -26,6 +26,8 @@ const Projects = ({ projects }: ProjectsPropsType) => {
                       logo={p.logo}
                       name={p.name}
                       pills={p.stack}
+                      platform={p.platform}
+                      source={p.source}
                     />
                   </List>
                 </Row>
