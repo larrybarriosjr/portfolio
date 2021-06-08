@@ -45,10 +45,10 @@ const Drawer = () => {
           <Image
             alt="Cipher Koala image"
             bordered
-            className="p-1 h-14 w-14"
-            height={44}
+            className="h-14 w-14"
             src="/images/koala.svg"
-            width={44}
+            layout="fill"
+            objectFit="contain"
           />
         }
         className="ml-3"
