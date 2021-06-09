@@ -22,8 +22,8 @@ const Contact = () => {
       <Row className="flex-col max-w-md gap-2 m-0 mx-auto my-2">
         <Section className="w-full my-0">
           <Row>
-            <form name="contact" method="POST" className="w-full" data-netlify="true">
-              <input type="hidden" name="contact-form" value="contact" />
+            <form name="Portfolio Contact Form" method="POST" className="w-full" data-netlify="true">
+              <input type="hidden" name="form-name" value="Portfolio Contact Form" />
               <Row>
                 <Input name="name" placeholder="Your name (What should I call you?)" required />
               </Row>
