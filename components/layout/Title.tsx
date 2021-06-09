@@ -8,16 +8,18 @@ import { TextType } from "types/enum"
 type TitleProps = React.ComponentPropsWithoutRef<"section"> & {
   avatar?: string
   alt?: string
+  description?: string
   heading: string
-  subheading?: string
+  subheading: string
   label: string
 }
 
-const Title = ({ avatar, alt, heading, subheading, label }: TitleProps) => {
+const Title = ({ avatar, alt, heading, subheading, description = subheading, label }: TitleProps) => {
   return (
     <Section className="bg-none">
       <Head>
         <title>Koala | {label}</title>
+        <meta name="description" content={description} />
       </Head>
       <Row
         aria-describedby={"page-info-" + label.toLowerCase()}

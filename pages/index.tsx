@@ -24,6 +24,8 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
         heading="Larry Barrios Jr."
         label="Featured"
         subheading="Web App Developer"
+        description="I'm Larry, a web app developer, and this is my personal portfolio called Koala. The
+          featured page includes details about me and summaries of my skills, projects and experiences."
       />
       <Row className="flex-wrap gap-2 m-0 md:flex-nowrap">
         <Section className="w-full my-0 md:w-1/2 md:mb-2">
