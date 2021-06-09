@@ -20,7 +20,7 @@ const Experiences = ({ experiences }: ExperiencesPropsType) => {
           industries. Maybe I should also list my previous non-related jobs?
           What do you think?"
       />
-      <Grid className="grid grid-cols-1 gap-2 my-2 sm:grid-cols-2">
+      <Grid className="grid-cols-1 gap-2 my-2 sm:grid-cols-2">
         {experiences.length
           ? experiences.map((e, idx) => (
               <Section key={idx} className="my-0">
