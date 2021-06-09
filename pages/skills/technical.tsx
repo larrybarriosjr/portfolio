@@ -27,7 +27,7 @@ const TechnicalSkills = ({ skills }: SkillsPropsType) => {
           also plan on explaining what I've learnt with each skills in a blog so some of
           them will be a link to it in the future."
       />
-      <Row className="flex-col gap-2 m-0">
+      <Row className="flex-col gap-2 m-0 my-2">
         {professional.length ? (
           <Section className="w-full my-0">
             <Row>
