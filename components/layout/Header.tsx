@@ -18,11 +18,12 @@ const Header = () => {
           download="Larry Barrios Jr Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="download resume"
         >
-          <Button icon={<BiDownload />} className="mx-3 lg:hidden" />
+          <Button aria-label="download resume" icon={<BiDownload />} className="mx-3 lg:hidden" />
         </a>
         <Link href="/">
-          <Button icon={<BiEnvelope />} className="mx-3 lg:hidden" />
+          <Button aria-label="open contact form" icon={<BiEnvelope />} className="mx-3 lg:hidden" />
         </Link>
         <Drawer />
       </Row>

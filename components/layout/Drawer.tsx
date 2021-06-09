@@ -45,12 +45,13 @@ const Drawer = () => {
           <Image
             alt="Cipher Koala image"
             bordered
-            className="h-14 w-14"
+            className="p-1 h-14 w-14"
             src="/images/koala.svg"
-            layout="fill"
-            objectFit="contain"
+            height={44}
+            width={44}
           />
         }
+        aria-label="koala drawer"
         className="ml-3"
         onClick={handleOpenDrawer}
       />
@@ -71,7 +72,7 @@ const Drawer = () => {
               </Text>
               <Text type={TextType.DRAWER_DESCRIPTION}>Web App Developer</Text>
             </Row>
-            <Button icon={<ImCross size="16px" />} onClick={handleCloseDrawer} />
+            <Button aria-label="close drawer" icon={<ImCross size="16px" />} onClick={handleCloseDrawer} />
           </Row>
         </Section>
         <Section className="my-0 bg-seafoam-green">
@@ -81,6 +82,7 @@ const Drawer = () => {
               download="Larry Barrios Jr Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="download resume"
             >
               <Button icon={<RiDownloadFill className="h-6 my-0 ml-2 mr-4" />} text="Download my resume" />
             </a>
