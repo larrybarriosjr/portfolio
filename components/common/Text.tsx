@@ -10,13 +10,13 @@ const Text = ({ type, link, children, className, ...props }: TextProps) => {
   const typeClassName = (type?: TextType) => {
     switch (type) {
       case TextType.DRAWER_DESCRIPTION:
-        return "text-xs font-bold text-fern-green"
+        return "text-xs font-bold text-onyx-black"
       case TextType.DRAWER_HEADING:
         return "font-extrabold tracking-wide text-forest-green"
       case TextType.ITEM_NAME:
         return link ? "font-bold text-forest-green cursor-pointer" : "font-bold text-onyx-black"
       case TextType.PAGE_DESCRIPTION:
-        return "font-bold text-fern-green"
+        return "font-bold text-onyx-black"
       case TextType.PAGE_HEADING:
         return "text-2xl font-extrabold tracking-wide text-forest-green"
       case TextType.PILL_NAME:
@@ -24,7 +24,7 @@ const Text = ({ type, link, children, className, ...props }: TextProps) => {
       case TextType.SUMMARY_HEADING:
         return link
           ? "text-xs font-semibold text-forest-green cursor-pointer"
-          : "text-xs font-semibold text-seafoam-green"
+          : "text-xs font-semibold text-onyx-black"
       default:
         return "text-xs font-medium text-onyx-black"
     }

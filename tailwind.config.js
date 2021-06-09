@@ -5,7 +5,6 @@ module.exports = {
   // or 'media' or 'class'
   theme: {
     colors: {
-      "fern-green": "#1a431480",
       "forest-green": "#1a4314",
       "onyx-black": "#030104",
       "seafoam-green": "#b2d2a4",
