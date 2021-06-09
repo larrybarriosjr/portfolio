@@ -20,9 +20,13 @@ const Image = ({ bordered = false, className, link, ...props }: ImageProps) => {
 
   return (
     <span className={classes}>
-      <a href={link} target="_blank" rel="noopener noreferrer">
+      {link ? (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <NextImage loader={loader} {...props} />
+        </a>
+      ) : (
         <NextImage loader={loader} {...props} />
-      </a>
+      )}
     </span>
   )
 }

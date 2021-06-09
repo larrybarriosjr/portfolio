@@ -34,6 +34,7 @@ const ProjectItem = ({
       <Row className="m-0">
         <Row className="m-0">
           <Image
+            alt={name + " logo"}
             src={logo}
             layout="fill"
             objectFit="contain"

@@ -31,7 +31,13 @@ const ExperienceItem = ({
     <li {...props}>
       <Row className="flex-col m-0 text-center">
         <Row className="m-0">
-          <Image src={logo} layout="fill" objectFit="contain" className="w-full h-16" />
+          <Image
+            alt={name + " logo"}
+            src={logo}
+            layout="fill"
+            objectFit="contain"
+            className="w-full h-16"
+          />
         </Row>
         <Text
           type={TextType.ITEM_NAME}
