@@ -22,7 +22,7 @@ const Header = () => {
         >
           <Button aria-label="download resume" icon={<BiDownload />} className="mx-3 lg:hidden" />
         </a>
-        <Link href="/">
+        <Link href="/contact">
           <Button aria-label="open contact form" icon={<BiEnvelope />} className="mx-3 lg:hidden" />
         </Link>
         <Drawer />

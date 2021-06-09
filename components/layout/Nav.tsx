@@ -39,7 +39,7 @@ const Nav = ({ className, ...props }: NavProps) => {
               download="Larry Barrios Jr Resume.pdf"
               className="hidden lg:flex"
             />
-            <NavItem icon={<RiMailFill />} name="Contact" link="/" className="hidden lg:flex" />
+            <NavItem icon={<RiMailFill />} name="Contact" link="/contact" className="hidden lg:flex" />
           </List>
         </Row>
       </nav>
