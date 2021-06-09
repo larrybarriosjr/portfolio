@@ -25,9 +25,9 @@ const Drawer = () => {
   }, [open])
 
   const classes = clsx([
-    "fixed z-10 w-full h-screen max-w-5xl -ml-4 transition-all",
-    "delay-700 divide-y bg-snow-white divide-steel-grey lg:-ml-6",
-    open ? "top-0" : "-top-full"
+    "fixed z-10 w-full max-w-5xl -ml-4 transition-all",
+    "duration-1000 ease-in-out divide-y bg-snow-white divide-steel-grey lg:-ml-6",
+    open ? "top-0 h-screen" : "-top-full h-0"
   ])
 
   const handleOpenDrawer = () => {
