@@ -1,6 +1,7 @@
 import Image from "components/common/Image"
 import Pill from "components/common/Pill"
 import Text from "components/common/Text"
+import List from "containers/List"
 import Row from "containers/Row"
 import { RiExternalLinkLine } from "react-icons/ri"
 import { TextType } from "types/enum"
@@ -68,11 +69,13 @@ const ExperienceItem = ({
           {functions && functions.length ? (
             <Row className="flex-col m-0 text-left gap-y-1">
               <Text className="font-bold">Job Description:</Text>
-              {functions.map((f, idx) => (
-                <Text key={idx} className="italic">
-                  &bull; {f}
-                </Text>
-              ))}
+              <List className="flex-col gap-y-1">
+                {functions.map((f, idx) => (
+                  <li key={idx}>
+                    <Text className="italic">&bull; {f}</Text>
+                  </li>
+                ))}
+              </List>
             </Row>
           ) : null}
         </Row>

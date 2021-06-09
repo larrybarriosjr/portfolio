@@ -64,7 +64,9 @@ const ProjectItem = ({
               <Text className="text-sm italic font-extrabold">Features:</Text>
               <List className="flex-col mt-1 gap-y-1">
                 {features.map((f, idx) => (
-                  <Text key={idx}>&bull; {f}</Text>
+                  <li key={idx}>
+                    <Text>&bull; {f}</Text>
+                  </li>
                 ))}
               </List>
             </Row>
