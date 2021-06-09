@@ -9,7 +9,7 @@ import Nav from "./Nav"
 
 const Header = () => {
   return (
-    <IconContext.Provider value={{ className: "text-4xl text-forest-green" }}>
+    <IconContext.Provider value={{ size: "36", className: "text-forest-green" }}>
       <Row className="items-center">
         <Logo className="mr-auto" />
         <Nav className="hidden lg:flex lg:static" />

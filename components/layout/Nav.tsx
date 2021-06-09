@@ -23,7 +23,7 @@ const Nav = ({ className, ...props }: NavProps) => {
   ])
 
   return (
-    <IconContext.Provider value={{ className: "h-6 w-6 text-onyx-black" }}>
+    <IconContext.Provider value={{ size: "24", className: "text-onyx-black" }}>
       <nav className={classes} {...props}>
         <Row className="m-0">
           <List className="lg:w-full lg:gap-x-8 lg:mr-4">

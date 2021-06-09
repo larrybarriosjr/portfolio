@@ -90,7 +90,7 @@ const Drawer = () => {
           <Row>
             <Text type={TextType.SUMMARY_HEADING}>Recommended List</Text>
           </Row>
-          <List className="flex-col m-4 gap-y-2">
+          <List className="flex-col gap-y-2">
             {recommended.map((r, idx) => (
               <DrawerItem key={idx} category={r.category} link={r.link} text={r.text} />
             ))}

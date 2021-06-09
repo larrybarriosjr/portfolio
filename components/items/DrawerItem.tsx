@@ -18,13 +18,13 @@ const DrawerItem = ({ category, icon, link, text, className, ...props }: DrawerI
   return (
     <IconContext.Provider value={{ size: "16" }}>
       <li className={classes} {...props}>
-        {icon ? icon : <BsXDiamondFill className="text-onyx-black" />}
-        <Text type={TextType.ITEM_NAME} className="ml-4 mr-1">
+        {icon ? icon : <BsXDiamondFill className="self-start mt-1 text-onyx-black" />}
+        <Text type={TextType.ITEM_NAME} className="self-start mt-px ml-2 mr-1 whitespace-nowrap">
           {category}:
         </Text>
         <a href={link} target="_blank" rel="noopener noreferrer">
-          <Text type={TextType.ITEM_NAME} link={Boolean(link)} className="flex items-center gap-1">
-            {text} <RiExternalLinkLine />
+          <Text type={TextType.ITEM_NAME} link={Boolean(link)}>
+            {text} <RiExternalLinkLine className="inline" />
           </Text>
         </a>
       </li>

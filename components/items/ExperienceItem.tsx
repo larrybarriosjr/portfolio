@@ -41,7 +41,7 @@ const ExperienceItem = ({
           {name} <RiExternalLinkLine />
         </Text>
         <Text>{title}</Text>
-        <Row className="flex-wrap self-center justify-center w-2/3 m-0 mt-2 gap-x-1 gap-y-2">
+        <Row className="flex-wrap self-center justify-center w-3/4 m-0 mt-2 gap-x-1 gap-y-2">
           {pills.map((pill, idx) => (
             <Pill key={idx} name={pill} />
           ))}
