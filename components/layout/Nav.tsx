@@ -27,7 +27,7 @@ const Nav = ({ className, ...props }: NavProps) => {
           <List className="lg:w-full lg:gap-x-8 lg:mr-8">
             <NavItem icon={<RiHomeHeartFill />} name="Featured" link="/" />
             <NavItem icon={<RiSwordFill />} name="Skills" link="/skills/technical" />
-            <NavItem icon={<RiUser2Fill />} name="Profile" link="/" />
+            <NavItem icon={<RiUser2Fill />} name="Profile" link="/profile" />
             <NavItem icon={<RiPencilRuler2Fill />} name="Projects" link="/projects" />
             <NavItem icon={<RiBriefcase4Fill />} name="Experiences" link="/experiences" />
           </List>

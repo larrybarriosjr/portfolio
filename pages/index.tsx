@@ -29,15 +29,21 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
       />
       <Row className="flex-wrap gap-2 m-0 md:flex-nowrap">
         <Section className="w-full my-0 md:w-1/2 md:mb-2">
-          <Row>
+          <Row className="justify-between">
             <Text type={TextType.SUMMARY_HEADING}>About Me</Text>
+            <Link href="/profile">
+              <Text type={TextType.SUMMARY_HEADING} link>
+                View Details
+              </Text>
+            </Link>
           </Row>
           <Row className="flex-col gap-y-4">
             <Text>
               I had a degree in Marketing Management, but I became a web developer because I realized
-              I&apos;m not a fan of marketing vs selling, sales pitches, and pretentious Business English.{" "}
-              <em>I find coding to be direct and precise, which is exactly what I love about it.</em> I had
-              no choice but to jump ship in my previous career.
+              I&apos;m not a fan of marketing vs selling, sales pitches, and pretentious Business English.
+              So, you won&apos;t see any hard selling here. Just an honest &quot;About Me&quot; desctiption.{" "}
+              <em>I find coding to be just like that, direct and precise, exactly what I love about it.</em>{" "}
+              I had no choice but to jump ship in my previous career.
             </Text>
             <Text>
               I want to help a company that has this kind of mindset at its core. Not as words to fill the
