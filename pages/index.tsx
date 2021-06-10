@@ -41,7 +41,7 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
             <Text>
               I had a degree in Marketing Management, but I became a web developer because I realized
               I&apos;m not a fan of marketing vs selling, sales pitches, and pretentious Business English.
-              So, you won&apos;t see any hard selling here. Just an honest &quot;About Me&quot; desctiption.{" "}
+              So, you won&apos;t see any hard selling here. Just an honest &quot;About Me&quot; description.{" "}
               <em>I find coding to be just like that, direct and precise, exactly what I love about it.</em>{" "}
               I had no choice but to jump ship in my previous career.
             </Text>
