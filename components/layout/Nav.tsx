@@ -5,9 +5,7 @@ import Row from "containers/Row"
 import { IconContext } from "react-icons"
 import {
   RiBriefcase4Fill,
-  RiDownloadFill,
   RiHomeHeartFill,
-  RiMailFill,
   RiPencilRuler2Fill,
   RiSwordFill,
   RiUser2Fill
@@ -26,20 +24,12 @@ const Nav = ({ className, ...props }: NavProps) => {
     <IconContext.Provider value={{ size: "24", className: "text-onyx-black" }}>
       <nav className={classes} {...props}>
         <Row className="m-0">
-          <List className="lg:w-full lg:gap-x-8 lg:mr-4">
+          <List className="lg:w-full lg:gap-x-8 lg:mr-8">
             <NavItem icon={<RiHomeHeartFill />} name="Featured" link="/" />
             <NavItem icon={<RiSwordFill />} name="Skills" link="/skills/technical" />
             <NavItem icon={<RiUser2Fill />} name="Profile" link="/" />
             <NavItem icon={<RiPencilRuler2Fill />} name="Projects" link="/projects" />
             <NavItem icon={<RiBriefcase4Fill />} name="Experiences" link="/experiences" />
-            <NavItem
-              icon={<RiDownloadFill />}
-              name="Resume"
-              link="Larry_Barrios_Jr_Resume.pdf"
-              download="Larry Barrios Jr Resume.pdf"
-              className="hidden lg:flex"
-            />
-            <NavItem icon={<RiMailFill />} name="Contact" link="/contact" className="hidden lg:flex" />
           </List>
         </Row>
       </nav>
