@@ -33,15 +33,22 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
             <Text type={TextType.SUMMARY_HEADING}>About Me</Text>
           </Row>
           <Row className="flex-col gap-y-4">
-            <Text type={TextType.ITEM_NAME}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tenetur, aut repellat porro
-              provident id delectus. Soluta repellat, doloribus autem cum ipsa harum ab a aut aperiam
-              cupiditate quasi est!
+            <Text>
+              I had a degree in Marketing Management, but I became a web developer because I realized
+              I&apos;m not a fan of marketing vs selling, sales pitches, and pretentious Business English.{" "}
+              <em>I find coding to be direct and precise, which is exactly what I love about it.</em> I had
+              no choice but to jump ship in my previous career.
             </Text>
-            <Text type={TextType.ITEM_NAME}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tenetur, aut repellat porro
-              provident id delectus. Soluta repellat, doloribus autem cum ipsa harum ab a aut aperiam
-              cupiditate quasi est!
+            <Text>
+              I want to help a company that has this kind of mindset at its core. Not as words to fill the
+              Mission statement, but as the driving factor for any decision-making involved. Companies, big
+              or small, who help in promoting transparency through how they manage their workforce and how
+              they deal with their customers are the companies I would be delighted to work with proactively
+              to further their endeavors.
+            </Text>
+            <Text>
+              Just two words, <strong>open</strong> and <strong>transparent</strong>. That&apos;s the world
+              I want to live in and the future I want to pursue.
             </Text>
           </Row>
         </Section>
