@@ -8,7 +8,7 @@ import { Fragment } from "react"
 import { RiSendPlaneFill } from "react-icons/ri"
 
 const Contact = () => {
-  const FORM_ACTION = `${process.env.NEXT_FORM_URL}/${process.env.NEXT_PUBLIC_FORM}`
+  const FORM_ACTION = `${process.env.NEXT_PUBLIC_FORM_URL}/${process.env.NEXT_PUBLIC_FORM}`
 
   return (
     <Fragment>
