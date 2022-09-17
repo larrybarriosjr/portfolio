@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "ci": "rm -rf node_modules && yarn install --frozen-lockfile"
   },
   "dependencies": {
     "@netlify/plugin-nextjs": "^3.4.2",
