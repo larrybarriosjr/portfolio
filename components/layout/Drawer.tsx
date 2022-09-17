@@ -84,7 +84,10 @@ const Drawer = () => {
               rel="noopener noreferrer"
               aria-label="download resume"
             >
-              <Button icon={<RiDownloadFill className="h-6 my-0 ml-2 mr-4" />} text="Download my resume" />
+              <Button
+                icon={<RiDownloadFill size="16px" className="h-6 my-0 ml-2 mr-4" />}
+                text="Download my resume"
+              />
             </a>
           </Row>
         </Section>

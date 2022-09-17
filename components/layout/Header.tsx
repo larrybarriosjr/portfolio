@@ -16,13 +16,18 @@ const Header = () => {
         <Row className="m-0">
           <List className="lg:w-full lg:gap-x-8 lg:mr-4">
             <NavItem
-              icon={<RiDownloadFill />}
+              icon={<RiDownloadFill size="24px" />}
               name="Resume"
               link="Larry_Barrios_Jr_Resume.pdf"
               download="Larry Barrios Jr Resume.pdf"
               className="mx-1 lg:mx-0"
             />
-            <NavItem icon={<RiMailFill />} name="Contact" link="/contact" className="mx-1 lg:mx-0" />
+            <NavItem
+              icon={<RiMailFill size="24px" />}
+              name="Contact"
+              link="/contact"
+              className="mx-1 lg:mx-0"
+            />
           </List>
         </Row>
         <Drawer />
