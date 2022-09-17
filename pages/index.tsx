@@ -20,7 +20,7 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
     <Fragment>
       <Title
         alt="Larry Barrios Jr."
-        avatar="/images/Larry.jpg"
+        avatar="/images/larry.jpg"
         heading="Larry Barrios Jr."
         label="Featured"
         subheading="Web App Developer"

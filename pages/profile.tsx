@@ -20,7 +20,7 @@ const Profile = () => {
         <Grid className="grid-cols-1 gap-2 my-2 md:grid-cols-2">
           <Row className="flex-col items-center my-auto text-center">
             <Image
-              src="/images/Larry.jpg"
+              src="/images/larry.jpg"
               alt="Larry Barrios Jr."
               layout="fill"
               objectFit="cover"
