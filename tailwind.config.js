@@ -2,7 +2,7 @@ module.exports = {
   darkMode: false,
   plugins: [],
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  // or 'media' or 'class'
+  safelist: ["border-2", "border-seafoam-green"],
   theme: {
     colors: {
       "forest-green": "#1a4314",
