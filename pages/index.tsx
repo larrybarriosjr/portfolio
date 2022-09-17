@@ -28,7 +28,7 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
           featured page includes details about me and summaries of my skills, projects and experiences."
       />
       <Row className="flex-wrap gap-2 m-0 md:flex-nowrap">
-        <Section className="w-full my-0 md:w-1/2 md:mb-2">
+        <Section bordered className="w-full my-0 md:w-1/2 md:mb-2">
           <Row className="justify-between">
             <Text type={TextType.SUMMARY_HEADING}>About Me</Text>
             <Link href="/profile">
@@ -58,7 +58,7 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
             </Text>
           </Row>
         </Section>
-        <Section className="w-full my-0 mb-2 md:w-1/2">
+        <Section bordered className="w-full my-0 mb-2 md:w-1/2">
           <Row className="justify-between">
             <Text type={TextType.SUMMARY_HEADING}>Skills Summary</Text>
             <Link href="/skills/technical">
@@ -80,7 +80,7 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
         </Section>
       </Row>
       <Row className="flex-wrap gap-2 m-0 md:flex-nowrap">
-        <Section className="w-full my-0 md:w-1/2 md:mb-2">
+        <Section bordered className="w-full my-0 md:w-1/2 md:mb-2">
           <Row className="justify-between">
             <Text type={TextType.SUMMARY_HEADING}>Projects Summary</Text>
             <Link href="/projects">
@@ -104,7 +104,7 @@ const Home = ({ skills, projects, experiences }: HomePropsType) => {
             </List>
           </Row>
         </Section>
-        <Section className="w-full my-0 mb-2 md:w-1/2">
+        <Section bordered className="w-full my-0 mb-2 md:w-1/2">
           <Row className="justify-between">
             <Text type={TextType.SUMMARY_HEADING}>Experiences Summary</Text>
             <Link href="/experiences">

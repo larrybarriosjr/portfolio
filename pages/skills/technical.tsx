@@ -29,7 +29,7 @@ const TechnicalSkills = ({ skills }: SkillsPropsType) => {
       />
       <Row className="flex-col gap-2 m-0 my-2">
         {professional.length ? (
-          <Section className="w-full my-0">
+          <Section bordered className="w-full my-0">
             <Row>
               <Text type={TextType.SUMMARY_HEADING}>Already Used on Professional Projects</Text>
             </Row>
@@ -43,7 +43,7 @@ const TechnicalSkills = ({ skills }: SkillsPropsType) => {
           </Section>
         ) : null}
         {personal.length ? (
-          <Section className="w-full my-0">
+          <Section bordered className="w-full my-0">
             <Row>
               <Text type={TextType.SUMMARY_HEADING}>Already Used on Personal Projects</Text>
             </Row>
@@ -57,7 +57,7 @@ const TechnicalSkills = ({ skills }: SkillsPropsType) => {
           </Section>
         ) : null}
         {explore.length ? (
-          <Section className="w-full my-0">
+          <Section bordered className="w-full my-0">
             <Row>
               <Text type={TextType.SUMMARY_HEADING}>Exploring Slightly as of the Moment</Text>
             </Row>
@@ -71,7 +71,7 @@ const TechnicalSkills = ({ skills }: SkillsPropsType) => {
           </Section>
         ) : null}
         {program.length ? (
-          <Section className="w-full my-0">
+          <Section bordered className="w-full my-0">
             <Row>
               <Text type={TextType.SUMMARY_HEADING}>Other Programs and Platforms Used</Text>
             </Row>

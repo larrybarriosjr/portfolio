@@ -23,7 +23,7 @@ const Experiences = ({ experiences }: ExperiencesPropsType) => {
       <Grid className="grid-cols-1 gap-2 my-2 sm:grid-cols-2">
         {experiences.length
           ? experiences.map((e, idx) => (
-              <Section key={idx} className="my-0">
+              <Section bordered key={idx} className="my-0">
                 <Row>
                   <List>
                     <ExperienceItem

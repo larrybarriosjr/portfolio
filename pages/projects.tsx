@@ -22,7 +22,7 @@ const Projects = ({ projects }: ProjectsPropsType) => {
       <Grid className="grid-cols-1 gap-2 my-2 sm:grid-cols-2">
         {projects.length
           ? projects.map((p, idx) => (
-              <Section key={idx} className="my-0">
+              <Section bordered key={idx} className="my-0">
                 <Row>
                   <List>
                     <ProjectItem
