@@ -9,7 +9,6 @@
     "ci": "rm -rf node_modules && yarn install --frozen-lockfile"
   },
   "dependencies": {
-    "@netlify/plugin-nextjs": "^3.4.2",
     "clsx": "^1.1.1",
     "he": "^1.2.0",
     "next": "10.2.3",

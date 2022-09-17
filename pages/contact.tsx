@@ -8,6 +8,8 @@ import { Fragment } from "react"
 import { RiSendPlaneFill } from "react-icons/ri"
 
 const Contact = () => {
+  const FORM_ACTION = `${process.env.NEXT_FORM_URL}/${process.env.NEXT_PUBLIC_FORM}`
+
   return (
     <Fragment>
       <Title
@@ -22,8 +24,7 @@ const Contact = () => {
       <Row className="flex-col max-w-md gap-2 m-0 mx-auto my-2">
         <Section bordered className="w-full my-0">
           <Row>
-            <form name="Portfolio Contact Form" method="POST" className="w-full" data-netlify="true">
-              <input type="hidden" name="form-name" value="Portfolio Contact Form" />
+            <form action={FORM_ACTION} name="Portfolio Contact Form" method="POST" className="w-full">
               <Row>
                 <Input name="name" placeholder="Your name (What should I call you?)" required />
               </Row>
