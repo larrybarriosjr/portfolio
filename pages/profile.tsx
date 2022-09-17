@@ -24,7 +24,7 @@ const Profile = () => {
               alt="Larry Barrios Jr."
               layout="fill"
               objectFit="cover"
-              className="grid m-4 w-60 h-60 sm:w-80 sm:h-80"
+              className="grid m-4 shadow-2xl w-60 h-60 sm:w-80 sm:h-80"
               bordered
             />
             <Text type={TextType.PAGE_HEADING}>Larry Barrios Jr.</Text>

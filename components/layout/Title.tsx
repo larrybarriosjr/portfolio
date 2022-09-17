@@ -32,7 +32,7 @@ const Title = ({ avatar, alt, heading, subheading, description = subheading, lab
             alt={alt}
             layout="fill"
             objectFit="cover"
-            className="grid w-40 h-40 m-4 sm:w-60 sm:h-60 sm:my-4"
+            className="grid w-40 h-40 m-4 shadow-2xl sm:w-60 sm:h-60 sm:my-4"
             bordered
           />
         ) : null}
