@@ -1,8 +1,10 @@
 module.exports = {
   darkMode: false,
   plugins: [],
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
-  safelist: ["border-2", "border-seafoam-green"],
+  purge: {
+    content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+    safelist: ["border-2", "border-seafoam-green"]
+  },
   theme: {
     colors: {
       "forest-green": "#1a4314",
