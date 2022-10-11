@@ -22,14 +22,7 @@ export default <ProjectType[]>[
   },
   {
     description: "An online webshop for workshops.",
-    features: [
-      "Mobile Responsive",
-      "Pre-Rendered for SEO",
-      "Workshop Browsing",
-      "Workshop Filter",
-      "Cart",
-      "Checkout"
-    ],
+    features: ["Mobile Responsive", "Workshop Browsing", "Workshop Filter", "Cart", "Checkout"],
     link: "https://tinel.larrybarriosjr.com",
     logo: "/images/projects/tinel.png",
     name: "Tinel",
@@ -47,6 +40,16 @@ export default <ProjectType[]>[
       "React Testing Library",
       "Cypress"
     ]
+  },
+  {
+    description: "A simple movie listing website.",
+    features: ["Mobile Responsive", "Movie Browsing", "Movie Search", "Favorites"],
+    link: "https://mvpmovie.larrybarriosjr.com",
+    logo: "/images/projects/mvpmovie.png",
+    name: "MVP Movie",
+    platform: "GitHub",
+    source: "https://github.com/larrybarriosjr/mvpmovie",
+    stack: ["React", "TypeScript", "React Query", "React Router", "Tailwind"]
   },
   {
     description: `A simple static web pages for a luxury fine${HYPHEN}dining restaurant.`,
