@@ -21,41 +21,32 @@ export default <ProjectType[]>[
     stack: ["React", "TypeScript", "Next JS", "Tailwind"]
   },
   {
-    description: "An online flight booking system.",
+    description: "An online webshop for workshops.",
     features: [
       "Mobile Responsive",
-      "Stripe Integration",
-      "Email Integration",
-      "One-Way and Round Trip",
-      "Domestic Prices",
-      "Multiple Passengers",
-      "Barcode on Print",
-      "Printable Ticket"
+      "Pre-Rendered for SEO",
+      "Workshop Browsing",
+      "Workshop Filter",
+      "Cart",
+      "Checkout"
     ],
-    link: "https://bifrost.larrybarriosjr.com",
-    logo: "/images/projects/bifrost.png",
-    name: "Bifrost",
+    link: "https://tinel.larrybarriosjr.com",
+    logo: "/images/projects/tinel.png",
+    name: "Tinel",
     platform: "GitHub",
-    source: "https://github.com/larrybarriosjr/bifrost",
-    stack: ["React", "TypeScript", "Tailwind", "React-Query", "Email JS", "Stripe"]
-  },
-  {
-    description: "A clone of the desktop app Microsoft To Do.",
-    features: [
-      "Progressive Web App",
-      "Works Offline",
-      "Installable App",
-      "Lists",
-      "Steps",
-      "Scheduling",
-      "Reminder Notification"
-    ],
-    link: "https://todo.larrybarriosjr.com",
-    logo: "/images/projects/todo.png",
-    name: "Microsoft To Do Clone",
-    platform: "GitHub",
-    source: "https://github.com/larrybarriosjr/microsoft-todo",
-    stack: ["React", "Recoil", "PWA", "Lovefield", "IndexedDB"]
+    source: "https://github.com/larrybarriosjr/tinel",
+    stack: [
+      "React",
+      "TypeScript",
+      "Redux Toolkit",
+      "React Router",
+      "Sass",
+      "Formik",
+      "Yup",
+      "Jest",
+      "React Testing Library",
+      "Cypress"
+    ]
   },
   {
     description: `A simple static web pages for a luxury fine${HYPHEN}dining restaurant.`,
