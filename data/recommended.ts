@@ -15,10 +15,5 @@ export default <RecommendedType[]>[
     category: "Mobile Game",
     link: "https://play.google.com/store/apps/details?id=com.square_enix.android_googleplay.DFFOperaOmnian&hl=en&gl=US",
     text: "FF Dissidia Opera Omnia"
-  },
-  {
-    category: "Mobile Program",
-    link: "https://vancedapp.com/",
-    text: "YouTube Vanced"
   }
 ]
