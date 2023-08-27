@@ -42,16 +42,6 @@ export default <ProjectType[]>[
     ]
   },
   {
-    description: "A simple movie listing website.",
-    features: ["Mobile Responsive", "Movie Browsing", "Movie Search", "Favorites"],
-    link: "https://mvpmovie.larrybarriosjr.com",
-    logo: "/images/projects/mvpmovie.png",
-    name: "MVP Movie",
-    platform: "GitHub",
-    source: "https://github.com/larrybarriosjr/mvpmovie",
-    stack: ["React", "TypeScript", "React Query", "React Router", "Tailwind"]
-  },
-  {
     description: `A simple static web pages for a luxury fine${HYPHEN}dining restaurant.`,
     features: [
       "Mobile Responsive",
